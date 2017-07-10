@@ -1,0 +1,56 @@
+body,div,padding,input,p,img{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body,html{
+    height:100%;
+    width:100%;
+    background:#444;
+    color:#DDD;
+}
+
+div#content{
+	margin-left: 1%
+}
+
+div#content{
+	font: 1em Consolas, monaco, monospace;
+}
+
+a:link, a:visited{
+    color:#DDD;
+}
+
+div#top_line{
+	
+}
+
+div#header{
+	margin-top:1%;
+}
+
+div#footer{
+	text-align: center;
+}
+
+div.topic_header{
+	color: #7CFC11;
+	margin-top:2%;
+}
+
+div.body_text{
+	margin-left:5%;
+}
+
+div.:nth-child(odd){
+	background-color: #444;
+}
+div.:nth-child(even){
+	background-color: #222;
+}
+
+div.body_text:last-chid{
+	//center 
+}
