@@ -54,3 +54,7 @@ div.:nth-child(even){
 div.body_text:last-chid{
 	//center 
 }
+.linko{
+	display: inline-block;
+}
+
