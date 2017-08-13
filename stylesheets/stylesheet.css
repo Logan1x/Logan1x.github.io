@@ -24,7 +24,7 @@ a:link, a:visited{
 }
 
 div#top_line{
-	
+
 }
 
 div#header{
@@ -52,9 +52,9 @@ div.:nth-child(even){
 }
 
 div.body_text:last-chid{
-	//center 
+	//center
 }
+
 .linko{
 	display: inline-block;
 }
-
