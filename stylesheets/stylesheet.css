@@ -5,9 +5,6 @@ body,div,padding,input,p,img{
 }
 
 body,html{
-    height:100%;
-    width:100%;
-    background:#444;
     color:#DDD;
 }
 
@@ -57,4 +54,102 @@ div.body_text:last-chid{
 
 .linko{
 	display: inline-block;
+}
+body {
+    background-color: #2B3D50;
+}
+#head {
+    font-family: monospace;
+    color: #fff;
+    margin: auto;
+    padding: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+#bar {
+    text-align: center;
+    width: 1050px;
+    height: 25px;
+    background-color: #DAD9D9;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    float: none;
+    border-radius: 5px 5px 0px 0px;
+}
+#red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -47%;
+    bottom: -20%;
+    position:relative;
+}
+#yellow {
+    background-color: #f2cb41;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -44%;
+    bottom: 40%;
+    position:relative;
+    display: block;
+}
+#green {
+    background-color: #1AAF5C;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -41%;
+    bottom: 99%;
+    position:relative;
+    display: block;
+}
+#screen {
+    background-color: #33485E;
+    width: 1050px;
+    height: 600px;
+    border-radius: 0;
+    margin: 0 auto;
+    padding: 1px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.font {
+    color: #fff;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+    position: static;
+}
+.cursor {
+	font-family: monospace;
+  font-weight:600;
+  color: #7CFC11;
+}
+.cursor:after {
+	content:"_";
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
