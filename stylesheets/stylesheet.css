@@ -153,3 +153,100 @@ body {
 		opacity: 0;
 	}
 }
+
+
+
+
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 50px;
+}
+.list-inline li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.social-icons .fa {
+    font-size: 1.8em;
+    transform: rotate(-90deg);
+}
+
+.social-icons .fa {
+    width: 30px;
+    height: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fa{ 
+    border-radius: 50%;
+}
+.social-icons.icon-rounded .fa{
+    border-radius:5px;
+}
+
+.social-icons .fa:hover, .social-icons .fa:active {
+    color: #FFF;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333; 
+}
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active { 
+    -webkit-transform: scale(1.1) rotate(-90deg);
+    -moz-transform: scale(1.1) rotate(-90deg);
+    -ms-transform: scale(1.1) rotate(-90deg);
+    -o-transform: scale(1.1) rotate(-90deg);
+    transform: scale(1.7) rotate(-90deg); 
+}
+
+.wrapper
+{
+    float: right;
+    padding-right: 50px;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: -1;
+    margin-right: 40px; 
+}
+.middle {
+
+}
+
+@media screen and (max-width: 1350px) {
+        .social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active { 
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.7); 
+        }
+        .wrapper
+        {
+    padding-top: 20px;
+    float: right;
+    padding-right: 50px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    z-index: -1;
+        }
+        
+        .social-icons .fa {
+    font-size: 1.8em;
+    transform: rotate(0deg);
+        }
+}
