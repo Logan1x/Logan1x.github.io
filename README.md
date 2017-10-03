@@ -9,8 +9,8 @@ Visit Here to See [Website](https://logan1x.github.io).
 
 2.[Ravi Kant Garg](https://github.com/garg-ravi24)
 
-3. [prakamya-mishra](https://github.com/prakamya-mishra)
+3.[prakamya-mishra](https://github.com/prakamya-mishra)
 
-4. [Ahad Ali](https://github.com/ahadali)
+4.[Ahad Ali](https://github.com/ahadali)
 
 
