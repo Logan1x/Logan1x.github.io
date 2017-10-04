@@ -87,6 +87,9 @@ body {
     bottom: -20%;
     position:relative;
 }
+#red:hover {
+    background-color: #c65037;
+}
 #yellow {
     background-color: #f2cb41;
     border-radius: 100%;
@@ -98,6 +101,9 @@ body {
     position:relative;
     display: block;
 }
+#yellow:hover {
+    background-color: #c8ac41;
+}
 #green {
     background-color: #1AAF5C;
     border-radius: 100%;
@@ -108,6 +114,9 @@ body {
     bottom: 99%;
     position:relative;
     display: block;
+}
+#green:hover {
+    background-color: #078650;
 }
 #screen {
     background-color: #33485E;
