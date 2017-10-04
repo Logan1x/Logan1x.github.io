@@ -56,11 +56,11 @@ div.body_text:last-chid{
 	display: inline-block;
 }
 body {
-    background-color: #2B3D50;
+    background-color: black;
 }
 #head {
     font-family: monospace;
-    color: #fff;
+    color: #7CFC11;
     margin: auto;
     padding: 35px;
     font-size: 40px;
