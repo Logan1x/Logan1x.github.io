@@ -3,14 +3,16 @@ Personal Portfolio Website.😎
 
 Visit Here to See [Website](https://logan1x.github.io).
 
-### Contributer's
+## Contributer's
 
-1.[Khushal Sharma](https://github.com/Logan1x)
+- Khushal Sharma ([@Logan1x](https://github.com/Logan1x))
 
-2.[Ravi Kant Garg](https://github.com/garg-ravi24)
+- Ravi Kant Garg ([@garg-ravi24](https://github.com/garg-ravi24))
 
-3.[prakamya-mishra](https://github.com/prakamya-mishra)
+- prakamya mishra([@prakamya-mishra](https://github.com/prakamya-mishra))
 
-4.[Ahad Ali](https://github.com/ahadali)
+- Ahad Ali([@ahadali](https://github.com/ahadali))
+
+- Vivek Ghanchi([@vivekghanchi](https://github.com/vivekghanchi))
 
 
