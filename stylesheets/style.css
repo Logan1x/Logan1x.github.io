@@ -1,0 +1,163 @@
+html, body {
+	margin:0px;
+	padding:10px;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+body {
+    background-color: #2b3d50;
+	color:#ddd
+}
+
+#head {
+    font-family: monospace;
+    color: #fff;
+    margin: auto;
+    padding: 15px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.cursor {
+	font-family: monospace;
+  font-weight:600;
+  color: #7CFC11;
+}
+.cursor:after {
+	content:"_";
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.container {
+	width:100%;
+	max-width:1050px;
+	height:80%;
+	display:block;
+	margin:auto;
+	text-align:left;
+	margin-top:10px;
+}
+
+#bar {
+    text-align: left;
+    max-width: 1040px;
+	width:100%;
+    height: 25px;
+    background-color: #DAD9D9;
+    margin: 0 auto;
+    font-family: monospace;
+	padding:5px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+	margin:5px 5px 0px 0px;
+	float:left;
+}
+#red:hover {
+    background-color: #c65037;
+}
+
+#yellow {
+    background-color: #f2cb41;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+	margin:5px 5px 0px 0px;
+	float:left;
+}
+#yellow:hover {
+    background-color: #c8ac41;
+}
+
+#green {
+    background-color: #1AAF5C;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+	margin:5px 5px 0px 0px;
+	float:left;
+}
+#green:hover {
+    background-color: #078650;
+}
+
+#screen {
+    background-color: #33485E;
+	width:100%;
+	max-width:1048px;
+    height: 100%;
+    border-radius: 0;
+    padding: 1px;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+div#content{
+	margin-left: 1%
+}
+
+div#content{
+	font: 1em Consolas, monaco, monospace;
+}
+
+div#header{
+	margin-top:1%;
+}
+
+div.topic_header{
+	color: #7CFC11;
+	margin-top:2%;
+}
+
+div.body_text{
+	margin-left:5%;
+}
+
+p{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+a:link, a:visited{
+    color:#DDD;
+}
+
+div#footer{
+	text-align: center;
+}
+
+div.wrapper {
+ 	margin:10px;
+	text-align:center;
+}
+
+.fa {
+	width:30px;
+	height:30px;
+}
