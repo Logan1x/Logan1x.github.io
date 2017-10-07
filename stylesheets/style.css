@@ -51,8 +51,10 @@ body {
 }
 
 .container {
-	width:100%;
+	width:95%;
 	max-width:1050px;
+	height:100%;
+	max-height:450px;
 	display:block;
 	margin:auto;
 	padding:0px;
@@ -111,9 +113,10 @@ body {
     background-color: #33485E;
 	width:100%;
 	max-width:1048px;
-    height: 100%;
-    border-radius: 0;
+	height:100%;
+    border-radius: 0px 0px 5px 5px;
     padding: 1px;
+	overflow-y:scroll;
 }
 
 div#content{
@@ -145,6 +148,18 @@ p{
 
 a:link, a:visited{
     color:#DDD;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 div#footer{
