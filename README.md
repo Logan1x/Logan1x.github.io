@@ -15,4 +15,6 @@ Visit Here to See [Website](https://logan1x.github.io).
 
 - Vivek Ghanchi([@vivekghanchi](https://github.com/vivekghanchi))
 
+- Francis Taberdo ([@francistaberdo](https://github.com/francistaberdo))
+
 
