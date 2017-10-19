@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background-color: #2b3d50;
+    background-color: #444444;
 	color:#ddd
 }
 
@@ -108,10 +108,10 @@ body {
 }
 
 #screen {
-    background-color: #33485E;
+    background-color: #545650;
 	width:100%;
 	max-width:1048px;
-	height:100%;
+	height:146%;
     border-radius: 0px 0px 5px 5px;
     padding: 1px;
 	overflow-y:scroll;
@@ -151,11 +151,11 @@ a:link, a:visited{
 ::-webkit-scrollbar {
     width: 10px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
- 
+
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
