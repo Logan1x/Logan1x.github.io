@@ -12,12 +12,13 @@ body {
 }
 
 #head {
-    font-family: monospace;
-    color: #fff;
-    margin: auto;
-    padding: 0px;
-    font-size: 40px;
-    text-align: center;
+color: #69f833;
+margin: auto;
+padding: 0px;
+font-size: 40px;
+text-align: center;
+font-family: Courier;
+
 }
 
 .cursor {
