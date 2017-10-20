@@ -14,5 +14,6 @@ Visit Here to See [Website](https://logan1x.github.io).
 - Ahad Ali([@ahadali](https://github.com/ahadali))
 
 - Vivek Ghanchi([@vivekghanchi](https://github.com/vivekghanchi))
+- Akshay Bhardwaj (akshaycoder997) (https://github.com/akshaycoder997
 
 
