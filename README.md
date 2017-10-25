@@ -17,4 +17,6 @@ Visit Here to See [Website](https://logan1x.github.io).
 
 - Chad Warford([@DigitalDesignerOnline](https://github.com/DigitalDesignerOnline))
 
+- Harshvardhan Singh([@harshvardhan58](https://github.com/harshvardhan58))
+
 
