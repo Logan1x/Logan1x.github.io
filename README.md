@@ -19,4 +19,5 @@ Visit Here to See [Website](https://logan1x.github.io).
 
 - Harshvardhan Singh([@harshvardhan58](https://github.com/harshvardhan58))
 
+- Shivam Pachauri([@shivamp123](https://github.com/shivamp123))
 
