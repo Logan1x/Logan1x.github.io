@@ -1,5 +1,6 @@
 # logan1x.github.io
 Personal Portfolio Website.😎
+contribute as much as u can
 
 Visit Here to See [Website](https://logan1x.github.io).
 
