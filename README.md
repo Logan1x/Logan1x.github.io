@@ -3,7 +3,7 @@ Personal Portfolio Website.😎
 
 Visit Here to See [Website](https://logan1x.github.io).
 
-## Contributer's
+## Contributers
 
 - Khushal Sharma ([@Logan1x](https://github.com/Logan1x))
 
