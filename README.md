@@ -4,7 +4,7 @@ contribute as much as u can
 
 Visit Here to See [Website](https://logan1x.github.io).
 
-## Contributer's
+## Contributors
 
 - Khushal Sharma ([@Logan1x](https://github.com/Logan1x))
 
