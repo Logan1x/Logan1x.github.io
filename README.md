@@ -22,3 +22,5 @@ Visit Here to See [Website](https://logan1x.github.io).
 
 - Shivam Pachauri([@shivamp123](https://github.com/shivamp123))
 
+- Chirag Jain([@chiraag_jain](https://github.com/chiraag_jain))
+
