@@ -24,3 +24,4 @@ Visit Here to See [Website](https://logan1x.github.io).
 
 - Chirag Jain([@chiraag_jain](https://github.com/chiraag_jain))
 
+//Please refer to some images/screenshots and development stack to provide a better overview of your project.
