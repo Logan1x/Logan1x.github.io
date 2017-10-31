@@ -6,7 +6,7 @@ Visit Here to See [Website](https://logan1x.github.io).
 
 ## Contributors
 
-- Khushal Sharma ([@Logan1x](https://github.com/Logan1x))
+- Khushal Sharma ([@Logan1x](https://github.com/Logan1x))//kushal 
 
 - Ravi Kant Garg ([@garg-ravi24](https://github.com/garg-ravi24))
 
