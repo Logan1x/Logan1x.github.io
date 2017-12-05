@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/logan1x
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://logan1x.github.io
+  * I am logan1x (https://keybase.io/logan1x) on keybase.
+  * I have a public key ASCRPBDHIaI5tvGSdGoxNkj7m_PHgC9vSqRuH_O4GhnCXAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120913c10c721a239b6f192746a313648fb9bf3c7802f6f4aa46e1ff3b81a19c25c0a",
+      "host": "keybase.io",
+      "kid": "0120913c10c721a239b6f192746a313648fb9bf3c7802f6f4aa46e1ff3b81a19c25c0a",
+      "uid": "429a9e4fe51ea1070cb7271e035b8219",
+      "username": "logan1x"
+    },
+    "merkle_root": {
+      "ctime": 1512463737,
+      "hash": "7ce0afc139ce169e5fbde0ca5e542df75db0eea4c51609b36c855fb9dbb5611db5cfa51c6a7ce5461d68afb6ccc3c894d4a954d253be771f51635a7299f856d3",
+      "hash_meta": "8a5bf17ed559ea8cb5d1cf460ff1a0117026261832ad4c4c948bb33f60af666a",
+      "seqno": 1779565
+    },
+    "service": {
+      "hostname": "logan1x.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.36"
+  },
+  "ctime": 1512463968,
+  "expire_in": 504576000,
+  "prev": "c498300a0650395f623da1a6e180dc49b5fd853d4ca82a3664ffdcec2afa42cb",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgkTwQxyGiObbxknRqMTZI+5vzx4Avb0qkbh/zuBoZwlwKp3BheWxvYWTFA0h7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOTEzYzEwYzcyMWEyMzliNmYxOTI3NDZhMzEzNjQ4ZmI5YmYzYzc4MDJmNmY0YWE0NmUxZmYzYjgxYTE5YzI1YzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOTEzYzEwYzcyMWEyMzliNmYxOTI3NDZhMzEzNjQ4ZmI5YmYzYzc4MDJmNmY0YWE0NmUxZmYzYjgxYTE5YzI1YzBhIiwidWlkIjoiNDI5YTllNGZlNTFlYTEwNzBjYjcyNzFlMDM1YjgyMTkiLCJ1c2VybmFtZSI6ImxvZ2FuMXgifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTI0NjM3MzcsImhhc2giOiI3Y2UwYWZjMTM5Y2UxNjllNWZiZGUwY2E1ZTU0MmRmNzVkYjBlZWE0YzUxNjA5YjM2Yzg1NWZiOWRiYjU2MTFkYjVjZmE1MWM2YTdjZTU0NjFkNjhhZmI2Y2NjM2M4OTRkNGE5NTRkMjUzYmU3NzFmNTE2MzVhNzI5OWY4NTZkMyIsImhhc2hfbWV0YSI6IjhhNWJmMTdlZDU1OWVhOGNiNWQxY2Y0NjBmZjFhMDExNzAyNjI2MTgzMmFkNGM0Yzk0OGJiMzNmNjBhZjY2NmEiLCJzZXFubyI6MTc3OTU2NX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJsb2dhbjF4LmdpdGh1Yi5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM2In0sImN0aW1lIjoxNTEyNDYzOTY4LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImM0OTgzMDBhMDY1MDM5NWY2MjNkYTFhNmUxODBkYzQ5YjVmZDg1M2Q0Y2E4MmEzNjY0ZmZkY2VjMmFmYTQyY2IiLCJzZXFubyI6NiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEDbe3f+zfR01O3GwSXLYqWvGqcCwLumvuZ4VSwyZwVN5enbUiQJoNlrB05wGJz6/wz+PExsLv/e5z21nL7xCPcOqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgAba6PACuWO07IcmcCdZ+6+Ydm7X7BnPPz1UC73u17KSjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/logan1x
+
+==================================================================
