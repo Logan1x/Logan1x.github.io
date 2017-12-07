@@ -20,6 +20,8 @@ body {
 	color: #fff;
 	font-size: 2.5em;
 	text-align: center;
+	float: left;
+	margin-left: 160px;
 }
 
 .cursor {
