@@ -148,6 +148,10 @@ a:link, a:visited {
 	justify-content: space-between;
 }
 
+.wrap {
+	font-size: 1.25em;
+}
+
 .social-icons a {
 	padding-right: 0.875em;
 	opacity: 0.85;
