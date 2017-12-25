@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/logan1x
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://logan1x.github.io
+  * I am logan1x (https://keybase.io/logan1x) on keybase.
+  * I have a public key with fingerprint FE9D 45C7 C92E 0D89 6B78  0CFE 1FDE D565 8E4F 4C4E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120913c10c721a239b6f192746a313648fb9bf3c7802f6f4aa46e1ff3b81a19c25c0a",
+      "fingerprint": "fe9d45c7c92e0d896b780cfe1fded5658e4f4c4e",
+      "host": "keybase.io",
+      "key_id": "1fded5658e4f4c4e",
+      "kid": "01012f591fff1e8e20579aaed8ef8b41eb5181fbac925889a6b39115c4699086dd980a",
+      "uid": "429a9e4fe51ea1070cb7271e035b8219",
+      "username": "logan1x"
+    },
+    "merkle_root": {
+      "ctime": 1514181341,
+      "hash_meta": "47912423d3730339c7512903b0bf054a033ab8e7aa92a99aeccc125950c1b8de",
+      "seqno": 1856005
+    },
+    "revoke": {
+      "sig_ids": [
+        "76e15453323c4b067e784a2f39523ee81a676bb1fb0fd58d97443f5bb8f1b4490f"
+      ]
+    },
+    "service": {
+      "hostname": "logan1x.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1514181492,
+  "expire_in": 157680000,
+  "prev": "b3707498e87c921c19463196d238be88a7e784243350e961e38e6162abad14ce",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMP/AnicbVN7TBRHHOYhoucTbKsthYa1SKOH7uzM7s7QF15jqNHSKlotxZ4zu7Nw
+Be6OuwU9EaPGi+KrGu1RokkfadGkqY8oKamttYiCqAlRUbDV1DakD6zEYKyNDzpL
+a1KTzj+bmf1+3/f9vt9M65jEOFf8M1e7+NbX5xbEn26JVMUV5e2wayQWMCNSbo1U
+xoc+vNzkYdtb5jOlXEkGikwANIBs6AqgCiRMswBRdKRRCKCGsMUIs6ChY1mxNAtR
+ijQOLAsyDCgghqIaMpXckuXzl/BQMOTz24LW4sREqqEbROGyiYnGRL1hiUKTm6qm
+Yo4sZCAuCksDYadCmGM0zKf7AuJMbLxD9v4H/9C3cG6pRDixAMdckVWdUMpNzC3M
+EOBMBRhYjAoHKsaEagwSAFQDaYTIWDNNgod8Vw3RIYVQIjS4CjgFsi4bTFd0wGWo
+MqwA4gDDPOSnFVygywMl1A+WS7VuqYKHysq5NxQI2E62hu1zEEAFSMhDBER/NFzq
+reA2dWR0AhSkQBPqUIaQGLoKFCJDJjNLVhEVZ5RhrlNKFEoI5YZhAEUlqmwAhk2n
+/TCv9AeEAlY1WVaFgxCvDpRxRzzsKxGphaXctyVdzEhFKoQKNBCTNZ3rGFHFgkRV
+IOdidJquMSYCki1TxSbREYKWyhi2AEOIyJa0pNYRC1X7jCFyZ0yPtj+9xGeXVrF/
+JhYMBeyAESgXv0ttOxjOdcKxI0EHv4wz779MXubzm+KmiIpqHgr7An7RikA+mhsi
+ilviy4O+EPf6HISqa1gWy9Hh1YKSQV3WEcEcO1cMGIAgDQKimQrEjGNMhxpWEISq
+zIkGOMRcA5pCGTUBMv4TJBE2aYmgFOn5qV0V4lJty3fFw+LiXXHDkxKcFxTnGjn+
+4btaOHfcg2lvjSrKPJHUvLjiSqG7fkz2t623XU0N8cf/mrDkA9ekrv7i5ozWwi1T
+Pr2SPJCQfWYz9hevSHijwbN6W8MX7Ss2FrHkJ1bkJUcKzvVOHv7ybwdc7L2Oc0Xz
+MrJWBevyEvfsKfz1qeKxlwdJ83WtOyXnyIyfJxYUHj39XMSdM8uKrI815Set3Hfn
+cEd7Z/Pw/p0bU0+OiA7uToj1dd0/ZBza1LM7ehy9f/bGydn1LFz34vnEr1vi/yzr
+vT7nfjBtfr9yYuSFp7PbSXd1Zs4iz7YbfRfmpJ76Zc5PYz1taw5+VnM2r21h7MHV
+dTtTsj3zpdjUVx5f4D9AVybLzdlZif7Q2uisiXTNwLxdla7KYcuMo89/9OUne6e8
+2Zn0cYZWWXAuvfUlT+Hogv0Bz6XFtdHFN9t7uj2n+we2Xriedq25ZnKsswk33t23
+OmX9xBm+a2sfmzAJeVM6D92tW9qwfHDT7dQN8+1I8faOjPzNcWnHXu3oTeuvX1dy
++LVh2/tG1nzftMzfWJ7e5j511V455YUf3r21ra8vM/+dljUba8+yi13dqYt2xfDB
+vfnRpZtH5c68KS8AOXOzLrvDP3pHnN+Z1DY7tnDHH7cujU+fBh94/fvBN/c+PHKq
+d2p3hrHkd3faTPfAYL327OdjfL1bLh1rTM6aceZiwqi66aHiaHrDjoSb93LHje85
+lhhdlfnVnZ4nG0f3/g0lJ/Yo
+=XWF7
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/logan1x
+
+==================================================================
