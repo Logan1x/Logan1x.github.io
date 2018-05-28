@@ -1,8 +1,9 @@
-# logan1x.github.io
 Personal Portfolio Website.😎
 contribute as much as you can
 
 Visit Here to See [Website](https://logan1x.github.io).
+
+See `License` to use for personal project.
 
 ## Contributors
 
@@ -17,4 +18,4 @@ Visit Here to See [Website](https://logan1x.github.io).
 - Chirag Jain([@chiraag_jain](https://github.com/chiraag_jain))
 - Ashish Bardhan([@AshBardhan](https://github.com/AshBardhan))
 
-//Please refer to some images/screenshots and development stack to provide a better overview of your project.
+//Please refer to some images/screenshots and development stack to provide a better overview of your contribution.
