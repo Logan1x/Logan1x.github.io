@@ -8,7 +8,7 @@ html, body {
 
 body {
     background-color: #444444;
-	color:#ddd
+	color:#fff
 }
 
 #head {
@@ -23,7 +23,7 @@ body {
 .cursor {
 	font-family: monospace;
   font-weight:600;
-  color: #7CFC11;
+  color: #7CFCaa;
 }
 .cursor:after {
 	content:"_";
