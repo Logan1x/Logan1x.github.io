@@ -17,5 +17,6 @@ See `License` to use for personal project.
 - Shivam Pachauri([@shivamp123](https://github.com/shivamp123))
 - Chirag Jain([@chiraag_jain](https://github.com/chiraag_jain))
 - Ashish Bardhan([@AshBardhan](https://github.com/AshBardhan))
+- Amine L'ch ([@aminelch](https://github.com/aminelch))
 
 //Please refer to some images/screenshots and development stack to provide a better overview of your contribution.
