@@ -5,7 +5,9 @@ Visit Here to See [Website](https://logan1x.github.io).
 
 See `License` to use for personal project.
 
-## Contributors
+<img align="left" src="https://posthog-static-files.s3.us-east-2.amazonaws.com/Website-Assets/rebrand/icons/Untitled_Artwork+2+copy+15+1.jpg" width="50px" />
+
+## Contributors 🦸
 
 - Khushal Sharma ([@Logan1x](https://github.com/Logan1x))
 - Ravi Kant Garg ([@garg-ravi24](https://github.com/garg-ravi24))
