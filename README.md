@@ -1,4 +1,4 @@
-Personal Portfolio Website.😎
+Portfolio Website with the web resume serves as a more personalized😎
 contribute as much as you can
 
 Visit Here to See [Website](https://logan1x.github.io).
