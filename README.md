@@ -3,7 +3,7 @@ contribute as much as you can
 
 Visit Here to See [Website](https://logan1x.github.io).
 
-See <a href="https://github.com/Logan1x/Logan1x.github.io/blob/master/LICENSE">MIT License</a> to use for personal project.
+See <a href="https://github.com/Logan1x/Logan1x.github.io/blob/master/LICENSE">License</a> to use for personal project.
 
 <img align="left" src="https://posthog-static-files.s3.us-east-2.amazonaws.com/Website-Assets/rebrand/icons/Untitled_Artwork+2+copy+15+1.jpg" width="50px" />
 
