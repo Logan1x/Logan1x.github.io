@@ -1,12 +1,12 @@
 html,
-body {
+.main {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
 }
 
-body {
+.main {
 	background-color: #444444;
 	color: #ddd;
 	font-size: 16px;
@@ -121,6 +121,33 @@ body {
 	margin-left: 1.75em;
 	margin-top: 0.125em;
 }
+
+/* PROJECT-CARD-CSS */
+.project-item{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.project-image:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card-row{
+	background-color: #444444;
+	color: #ddd;
+}
+.btn-default{
+  background-color: #7CFC11;
+  color : #fff;
+  text-decoration: none;
+}
+
+.btn-default:hover{
+  background-color: #fff;
+  color : #7CFC11;
+  font-weight: bold;
+}
+
+/* PROJECT-CARD-CSS-END */
 
 ul {
 	padding: 0 0 0 1.5em;
