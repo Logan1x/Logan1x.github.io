@@ -19,5 +19,6 @@ See <a href="https://github.com/Logan1x/Logan1x.github.io/blob/master/LICENSE">L
 - Shivam Pachauri([@shivamp123](https://github.com/shivamp123))
 - Chirag Jain([@chiraag_jain](https://github.com/chiraag_jain))
 - Ashish Bardhan([@AshBardhan](https://github.com/AshBardhan))
+- Ahsan Khan([@ahsankhan26](https://github.com/ahsankhan26))
 
 //Please refer to some images/screenshots and development stack to provide a better overview of your contribution.
