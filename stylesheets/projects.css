@@ -1,0 +1,61 @@
+:root{
+    --bg-color:#444;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: #ddd;
+	font-size: 16px;
+	font-family: monospace;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.container{
+    max-width: 800px;
+    margin:auto;
+    padding:0.5rem;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.project-main{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.project-description{
+    margin:0.5rem;
+    padding:0rem 0.5rem;
+    width:30%;
+}
+
+.list-non-bullet{
+    list-style: none;
+}
+
+.list-item-inline{
+    display:inline;
+    margin-left:0rem;
+    padding: 0rem 0.5rem;
+}
+
+.project-description a{
+    text-decoration:none;
+    color: #7CFC11;
+}
