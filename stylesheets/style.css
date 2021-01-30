@@ -120,6 +120,7 @@ body {
 .topic_text {
 	margin-left: 1.75em;
 	margin-top: 0.125em;
+	margin-right:1.75em;
 }
 
 ul {
@@ -217,6 +218,7 @@ a:hover {
 		margin-left: 1.25em;
 	}
 }
+
 
 @media screen and (max-width: 480px) {
 	body {
