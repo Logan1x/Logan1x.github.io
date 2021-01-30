@@ -29,6 +29,10 @@ body {
     padding:0.5rem;
 }
 
+.container .heading{
+    color: #7CFC11;
+}
+
 .container h1{
     text-align: center;
 }
@@ -45,17 +49,63 @@ body {
     width:30%;
 }
 
-.list-non-bullet{
-    list-style: none;
+@media only screen and (max-width: 600px){
+    .project-description{
+        width: 100%;
+    }
 }
 
-.list-item-inline{
-    display:inline;
-    margin-left:0rem;
-    padding: 0rem 0.5rem;
+.button {
+    display: flex;
 }
 
-.project-description a{
+.button a{
     text-decoration:none;
     color: #7CFC11;
+    padding-right: 1rem;
+}
+
+.button a:hover{
+    color : #DDD;
+}
+
+#footer {
+	height: 3.75em;
+	bottom: 0;
+	width: 90%;
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+#footer a{
+    color: #DDD;
+}
+
+
+#footer a:hover {
+    color: #7CFC11;
+    cursor: pointer;
+}
+
+.wrapper {
+	display: flex;
+	font-size: 0.75em;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrap {
+	font-size: 1.25em;
+}
+
+.social-icons a {
+    
+	padding-right: 0.875em;
+	opacity: 0.85;
+	display: inline-block;
+}
+
+.social-icons a:hover {
+	opacity: 1;
 }
