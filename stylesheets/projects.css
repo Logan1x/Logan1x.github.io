@@ -1,5 +1,7 @@
-:root{
-    --bg-color:#444;
+:root {
+	--bg-color: #444;
+	--color-green : #7CFC11;
+	--color-dull-white : #ddd;
 }
 
 html,
@@ -12,7 +14,7 @@ body {
 
 body {
 	background-color: var(--bg-color);
-	color: #ddd;
+	color: var(--color-dull-white);
 	font-size: 16px;
 	font-family: monospace;
 }
@@ -23,50 +25,64 @@ body {
 	box-sizing: border-box;
 }
 
-.container{
-    max-width: 800px;
-    margin:auto;
-    padding:0.5rem;
+.container {
+	max-width: 800px;
+	margin: auto;
+	padding: 0.5rem;
 }
 
-.container .heading{
-    color: #7CFC11;
+.container .heading {
+	color: var(--color-green);
 }
 
-.container h1{
-    text-align: center;
+.container h1 {
+	text-align: center;
 }
 
-.project-main{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
+.project-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.project-description{
-    margin:0.5rem;
-    padding:0rem 0.5rem;
-    width:30%;
+.project-description {
+	margin: 0.5rem;
+	padding: 0rem 0.5rem;
+	width: 30%;
 }
 
-@media only screen and (max-width: 600px){
-    .project-description{
-        width: 100%;
-    }
+@media only screen and (max-width: 600px) {
+	.project-description {
+		width: 100%;
+	}
+}
+
+.highlight{
+	color: var(--color-green);
+}
+
+.extra-div a {
+	color: var(--color-dull-white);
+}
+
+.extra-div a:hover {
+	color: var(--color-green);
+	cursor: pointer;
 }
 
 .button {
-    display: flex;
+	display: flex;
 }
 
-.button a{
-    text-decoration:none;
-    color: #7CFC11;
-    padding-right: 1rem;
+.button a {
+	text-decoration: none;
+	color: var(--color-green);
+	padding-right: 1rem;
 }
 
-.button a:hover{
-    color : #DDD;
+.button a:hover {
+	color: var(--color-dull-white);
+	text-decoration: underline;
 }
 
 #footer {
@@ -77,14 +93,14 @@ body {
 	margin: 0 auto;
 }
 
-#footer a{
-    color: #DDD;
+#footer a {
+	color: var(--color-dull-white);
 }
 
 
 #footer a:hover {
-    color: #7CFC11;
-    cursor: pointer;
+	color: var(--color-green);
+	cursor: pointer;
 }
 
 .wrapper {
@@ -100,7 +116,7 @@ body {
 }
 
 .social-icons a {
-    
+
 	padding-right: 0.875em;
 	opacity: 0.85;
 	display: inline-block;

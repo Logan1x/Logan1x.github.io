@@ -203,6 +203,10 @@ a:hover {
 	color: #7CFC11;
 }
 
+.project-button {
+	text-decoration-color: #7CFC11;
+}
+
 @media (min-width: 1600px) {
 	body {
 		font-size: 18px;
