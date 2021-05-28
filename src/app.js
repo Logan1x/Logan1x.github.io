@@ -7,7 +7,7 @@
 // make foter small in phone screen for project page
 
 var firebaseConfig = {
-  apiKey: ${{secret.FIREBASE_API}},
+  apiKey: "AIzaSyARD4Hp1IDOEjuqK4s9aSmbA8ov8uhI55k",
   authDomain: "portfolio-a94d1.firebaseapp.com",
   projectId: "portfolio-a94d1",
   storageBucket: "portfolio-a94d1.appspot.com",
@@ -33,7 +33,6 @@ function loadData(doc) {
 
   project_card.setAttribute("class", "project-description");
   btn.setAttribute("class", "button");
-  console.log(doc.data().link);
   repo.setAttribute("href", doc.data().repo);
 
   projectName.textContent = doc.data().name;
@@ -43,7 +42,6 @@ function loadData(doc) {
   repo.textContent = "Repo";
 
   if (doc.data().link != "") {
-    console.log("hello");
     link.setAttribute("href", doc.data().link);
     link.textContent = "Link";
     btn.appendChild(link);
@@ -65,7 +63,6 @@ db.collection("projects")
   .get()
   .then((snapshot) => {
     snapshot.docs.forEach((doc) => {
-      console.log(doc.data());
       loadData(doc);
     });
   });
