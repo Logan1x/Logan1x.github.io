@@ -1,185 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Khushal Sharma</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="stylesheets/projects.css">
-    <script src="https://kit.fontawesome.com/1a48924413.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="stylesheets/projects.css" />
+    <script
+      src="https://kit.fontawesome.com/1a48924413.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>Some of the (mini)<span class="heading">projects</span> I have done:</h1>
+      <h1>
+        Some of the (mini)<span class="heading">projects</span> I have done:
+      </h1>
     </div>
-<!-- projects -->
-    <div class="container project-main">
-        <div class="project-description">
-            <h3>Retricia</h3>
-            <small>Jan 2021</small>
-            <p>A place to look for vintage games of our childhood. This project was selected as <span
-                    class="highlight">First Overall in Snakes
-                    and Hackers hackathon</span> by Major League Hacking. This project was built with team of Random
-                Strangers.</p>
-            <div class="button">
-                <a href="https://retricia.netlify.app/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/Logan1x/Retricia">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>Nucleotide Sequence Generator</h3>
-            <small>Jul 2020 </small>
-            <p>This project is to generate random sequence of DNA nucleotides (i.e. A, G, T, C) and also to find reverse
-                complement of that particular sequence.</p>
-            <div class="button">
-                <a href="https://nucleotide-generator.herokuapp.com/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/Logan1x/Nucleotide-Sequence-generator">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>Banana Translator</h3>
-            <small>Dec 2020 </small>
-            <p>This project is vanilla javascript project which uses api from funtranslations.com to translate text into
-                minion language.</p>
-            <div class="button">
-                <a href="https://banana-trans.netlify.app/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/Logan1x/banana_translator">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>Python Scripts</h3>
-            <small>Jul 2017 </small>
-            <p>A GitHub Repo with a collection of various Python Scripts With 155+ stars.</p>
-            <div class="button">
-                <a href="https://logan1x.github.io/Python-Scripts/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/Logan1x/Python-Scripts">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>Emoji Meaning</h3>
-            <small>Dec 2020 </small>
-            <p>A ReactJS Project to find meaning of several emoji's.</p>
-            <div class="button">
-                <a href="https://knowthisemoji.netlify.app/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/Logan1x/emoji-meaning">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>Change The Navbar</h3>
-            <small>Jul 2020 </small>
-            <p>A vanilla javascript experiment to learn about queryselector.</p>
-            <div class="button">
-                <a href="https://logan1x.github.io/changethenavbar/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/Logan1x/changethenavbar">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>DNA-Binder</h3>
-            <small>Nov 2020 </small>
-            <p>A Machine Learning Project to predict DNA binders for given test sequence.</p>
-            <div class="button">
-                <!-- <a href="#">
-                    <p>Link</p>
-                </a> -->
-                <a href="https://github.com/Logan1x/DNA-Binder">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>Classroom</h3>
-            <small>Aug 2020</small>
-            <p>An open source minimal alternative to Google classroom, powered by Django.</p>
-            <div class="button">
-                <a href="https://parthpandyappp.github.io/Classroom/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/parthpandyappp/Classroom">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>Year Progress</h3>
-            <small>Jun 2020 </small>
-            <p>Year Progress Bot, Made with flask </p>
-            <div class="button">
-                <a href="https://year-progres.herokuapp.com/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/Logan1x/Year-Progress">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-        <div class="project-description">
-            <h3>Pixel Art Maker</h3>
-            <small>May 2018 </small>
-            <p>A web app that allows users to draw pixel art on a customizable canvas!</p>
-            <div class="button">
-                <a href="https://logan1x.github.io/PixelArtMaker/">
-                    <p>Link</p>
-                </a>
-                <a href="https://github.com/Logan1x/PixelArtMaker">
-                    <p>Repo</p>
-                </a>
-            </div>
-        </div>
-    </div>
+    <!-- projects -->
+    <div id="projects" class="container ">
+      <div class="project-temp project-main">
+        <!-- getting projects -->
+      </div>
     <div class="container extra-div">
-        <p>for more projects, checkout on my github <a href="https://github.com/logan1x">here</a>.</p>
+      <p>
+        for more projects, checkout on my github
+        <a href="https://github.com/logan1x">here</a>.
+      </p>
     </div>
     <!--Footer Section-->
     <div id="footer">
-        <div class="wrapper">
-            <div class="social-icons">
-                <a href="https://github.com/Logan1x" target="_blank"><i class="fa fa-github-alt fa-lg"
-                        aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/khushal-s-679354b2/" target="_blank"><i
-                        class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&screen_name=herkuch&tw_p=followbutton"
-                    target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-                <a href="https://stackoverflow.com/users/7141415/khushal-sharma?tab=profile" target="_blank"><i
-                        class="fa fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
-                <a href="https://www.kaggle.com/logan1x" target="_blank"><i class="fab fa-kaggle"></i></a>
-                <a href="https://unsplash.com/@logan1x" target="_blank"><i class="fa fa-camera"></i></a>
-
-            </div>
-
-            <div class="wrap">
-                <a href="/">Home</a>
-                <a href="https://drive.google.com/file/d/1JznEYEdsJc72IE15hUeHJ9Ora9BUwe67/view?usp=sharing"
-                    target="_blank">Resume</a>
-                <a href="https://logan1x.github.io/blag">Blag</a>
-            </div>
+      <div class="wrapper">
+        <div class="social-icons">
+          <a href="https://github.com/Logan1x" target="_blank"
+            ><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/khushal-s-679354b2/"
+            target="_blank"
+            ><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fpublish.twitter.com%2F&ref_src=twsrc%5Etfw&screen_name=herkuch&tw_p=followbutton"
+            target="_blank"
+            ><i class="fa fa-twitter fa-lg" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://stackoverflow.com/users/7141415/khushal-sharma?tab=profile"
+            target="_blank"
+            ><i class="fa fa-stack-overflow fa-lg" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.kaggle.com/logan1x" target="_blank"
+            ><i class="fab fa-kaggle"></i
+          ></a>
+          <a href="https://unsplash.com/@logan1x" target="_blank"
+            ><i class="fa fa-camera"></i
+          ></a>
         </div>
 
+        <div class="wrap">
+          <a href="/">Home</a>
+          <a
+            href="https://drive.google.com/file/d/1JznEYEdsJc72IE15hUeHJ9Ora9BUwe67/view?usp=sharing"
+            target="_blank"
+            >Resume</a
+          >
+          <a href="https://logan1x.github.io/blag">Blag</a>
+        </div>
+      </div>
     </div>
-</body>
 
+    <script src="src/app.js"></script>
+  </body>
 </html>
