@@ -1,10 +1,8 @@
 // --------------TODO--------------
 
 // The page does not contain a heading, skip link, or landmark region
-// <html> element does not have a [lang] attribute
 // Links do not have a discernible name
 // Links do not have descriptive text
-// make foter small in phone screen for project page
 
 var firebaseConfig = {
   apiKey: "AIzaSyARD4Hp1IDOEjuqK4s9aSmbA8ov8uhI55k",
@@ -23,7 +21,7 @@ const projects = document.querySelector(".project-temp");
 
 function loadData(doc) {
   let project_card = document.createElement("div");
-  let projectName = document.createElement("h3");
+  let projectName = document.createElement("h2");
   let date = document.createElement("small");
   let content = document.createElement("p");
   let tags = document.createElement("small");
@@ -38,7 +36,7 @@ function loadData(doc) {
   projectName.textContent = doc.data().name;
   date.textContent = doc.data().date;
   content.innerHTML = doc.data().content;
-  tags.textContent = "Tech-Stack : " + doc.data().tags;
+  tags.innerHTML = "<b>Tech-Stack</b> : " + doc.data().tags;
   repo.textContent = "Repo";
 
   if (doc.data().link != "") {

@@ -19,6 +19,10 @@ body {
   font-family: monospace;
 }
 
+h2 {
+  font-size: larger;
+}
+
 *,
 *:before,
 *:after {
@@ -88,7 +92,7 @@ body {
   width: 90%;
   max-width: 1040px;
   margin: 0 auto;
-  font-size: larger;
+  font-size: 16px;
 }
 
 #footer a {
