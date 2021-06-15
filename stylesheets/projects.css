@@ -43,6 +43,13 @@ h2 {
   text-align: center;
 }
 
+/* loader */
+.loader{
+text-align: center;
+}
+
+/* projects */
+
 .project-main {
   display: flex;
   flex-wrap: wrap;

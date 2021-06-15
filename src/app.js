@@ -20,6 +20,11 @@ db.settings({ timestampsInSnapshots: true });
 const projects = document.querySelector(".project-temp");
 
 function loadData(doc) {
+
+  const loader = document.querySelector('.loader');
+
+  loader.style.display = "none";
+
   let project_card = document.createElement("div");
   let projectName = document.createElement("h2");
   let date = document.createElement("small");
