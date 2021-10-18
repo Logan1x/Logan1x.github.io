@@ -9,10 +9,10 @@ See <a href="https://github.com/Logan1x/Logan1x.github.io/blob/master/LICENSE">L
 
 ## Contributors 🦸
 
-- Khushal Sharma ([@Logan1x](https://github.com/Logan1x))
-- Ravi Kant Garg ([@garg-ravi24](https://github.com/garg-ravi24))
-- prakamya mishra([@prakamya-mishra](https://github.com/prakamya-mishra))
-- Chad Warford([@DigitalDesignerOnline](https://github.com/DigitalDesignerOnline))
-- Ashish Bardhan([@AshBardhan](https://github.com/AshBardhan))
+<p align="center">
+        <a href="https://github.com/logan1x/logan1x.github.io/graphs/contributors">
+                <img src="https://contributors-img.web.app/image?repo=logan1x/logan1x.github.io" />
+        </a>
+</p>
 
 //Please refer to some images/screenshots and development stack to provide a better overview of your contribution.
