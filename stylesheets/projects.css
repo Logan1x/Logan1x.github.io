@@ -35,6 +35,12 @@ h2 {
   padding: 0.5rem;
 }
 
+.resume-container{
+  max-width: 850px;
+  margin: auto;
+  padding: 0rem 0.5rem;
+}
+
 .container .heading {
   color: var(--color-green);
 }
@@ -46,6 +52,25 @@ h2 {
 /* loader */
 .loader{
 text-align: center;
+margin: 1rem 0;
+}
+
+/* filter */
+.filter-data-btn{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 1.3rem;
+}
+
+.filter-btn{
+  margin: 0rem 0.5rem;
+  color: var(--color-green);
+  cursor: pointer;
+}
+
+.filter-btn:hover{
+  text-decoration: underline;
 }
 
 /* projects */
@@ -53,7 +78,7 @@ text-align: center;
 .project-main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .project-description {
@@ -136,6 +161,11 @@ text-align: center;
 @media only screen and (max-width: 600px) {
   .project-description {
     width: 100%;
+  }
+
+  .filter-data-btn{
+    justify-content: center;
+    margin-left: 0rem;
   }
 
   #footer {

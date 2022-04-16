@@ -15,32 +15,30 @@
       src="https://kit.fontawesome.com/1a48924413.js"
       crossorigin="anonymous"
     ></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
   </head>
 
   <body>
     <div class="container">
       <h1>
-        Some of the (mini)<span class="heading">projects</span> I have done:
+        Some of the <span class="heading">projects</span> I have done:
       </h1>
-    </div>
-    <div class="loader">Loading...</div>
+      <div class="filter-data-btn">
+        <p>Filter By:</p>
+        <p class="filter-btn" id="All" >All</p>
+        <p class="filter-btn" id="VanillaJS">VanillaJS</p>
+        <p class="filter-btn" id="ReactJS" >ReactJS</p>
+        <p class="filter-btn" id="Python" >Python</p>
+      </div>
+      <div class="loader">Loading...</div>
+  </div>
+
     <!-- projects -->
-    <div id="projects" class="container ">
+    <div id="projects" class="container">
+      
       <div class="project-temp project-main">
         <!-- getting projects -->
-        <div class="project-description">
-          <h3>Neog-Camp Level 0</h3>
-          <small>Aug 2021</small>
-          <p>A single collection of all neog-camp projects till mark14.</p>
-          <div class="button">
-              <a href="./neogProjects.html">
-                  <p>Link</p>
-              </a>
-          </div>
-      </div>
+        
       </div>
     <div class="container extra-div">
       <p>
@@ -80,8 +78,7 @@
         <div class="wrap">
           <a href="/">Home</a>
           <a
-            href="https://drive.google.com/file/d/1JznEYEdsJc72IE15hUeHJ9Ora9BUwe67/view?usp=sharing"
-            target="_blank" rel="noopener"
+            href="./resume.html"
             >Resume</a
           >
           <a href="https://logan1x.hashnode.dev/">Blag</a>
@@ -89,6 +86,6 @@
       </div>
     </div>
 
-    <script src="src/app.js"></script>
+    <script type="module" src="src/projects.js"></script>
   </body>
 </html>
