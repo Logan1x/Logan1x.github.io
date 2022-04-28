@@ -1,5 +1,14 @@
 export const projectData = [
   {
+    projectName: "ScanIt",
+    projectDate: "April 2022",
+    projectDescription:
+      "A qr Code Scanner and Generator app, Made with NextJS and TailwindCSS",
+    tags: ["HTML5", "TailwindCSS", "ReactJS", "NextJS"],
+    link: "https://scan-project.vercel.app/",
+    repo: "https://github.com/Logan1x/ScanIt",
+  },
+  {
     projectName: "Plethora",
     projectDate: "March 2022",
     projectDescription:
