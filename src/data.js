@@ -1,5 +1,23 @@
 export const projectData = [
   {
+    projectName: "Tether",
+    projectDate: "June 2022",
+    projectDescription:
+      "An minimal Social media app based ReactJS and Redux toolkit.",
+    tags: ["HTML5", "TailwindCSS", "ReactJS", "Redux Toolkit"],
+    link: "https://tethering.netlify.app/",
+    repo: "https://github.com/Logan1x/Tether",
+  },
+  {
+    projectName: "Utopia",
+    projectDate: "May 2022",
+    projectDescription:
+      "Quiz app based on different themes and screen sizes to make a difference.",
+    tags: ["HTML5", "CSS3", "ReactJS", "Mockbee"],
+    link: "https://utopia-project.netlify.app/",
+    repo: "https://github.com/Logan1x/Utopia_v2",
+  },
+  {
     projectName: "ScanIt",
     projectDate: "April 2022",
     projectDescription:
