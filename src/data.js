@@ -1,5 +1,14 @@
 export const projectData = [
   {
+    projectName: "unSelected",
+    projectDate: "November 2022",
+    projectDescription:
+      "Generate your cover letter using OpenAI",
+    tags: ["HTML5", "TailwindCSS", "ReactJS", "NextJS"],
+    link: "https://unselected.vercel.app/",
+    repo: "https://github.com/Logan1x/unselected",
+  },
+  {
     projectName: "Tether",
     projectDate: "June 2022",
     projectDescription:
