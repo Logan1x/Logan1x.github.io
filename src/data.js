@@ -12,7 +12,7 @@ export const projectData = [
     projectName: "Tether",
     projectDate: "June 2022",
     projectDescription:
-      "An minimal Social media app based ReactJS and Redux toolkit.",
+      "A minimal Social media app based ReactJS and Redux toolkit.",
     tags: ["HTML5", "TailwindCSS", "ReactJS", "Redux Toolkit"],
     link: "https://tethering.netlify.app/",
     repo: "https://github.com/Logan1x/Tether",
@@ -30,7 +30,7 @@ export const projectData = [
     projectName: "ScanIt",
     projectDate: "April 2022",
     projectDescription:
-      "A qr Code Scanner and Generator app, Made with NextJS and TailwindCSS",
+      "A QR Code Scanner and Generator app, Made with NextJS and TailwindCSS",
     tags: ["HTML5", "TailwindCSS", "ReactJS", "NextJS"],
     link: "https://scan-project.vercel.app/",
     repo: "https://github.com/Logan1x/ScanIt",
@@ -39,7 +39,7 @@ export const projectData = [
     projectName: "Plethora",
     projectDate: "March 2022",
     projectDescription:
-      "A E-commerce Plateform to buy everything related to cycles.",
+      "A E-commerce Platform to buy everything related to cycles.",
     tags: ["HTML5", "CSS3", "ReactJS", "Mockbee"],
     link: "https://plethora-v2.netlify.app/",
     repo: "https://github.com/Logan1x/plethora_v2",
@@ -66,7 +66,7 @@ export const projectData = [
     projectName: "BookMaarks",
     projectDate: "Aug 2021",
     projectDescription:
-      "A Resource-Docket where you can add personalized important resources, URLs to create a docket of such stuff! Add to your collection and save them for later use.",
+      "A Resource-Docket where you can add personalized important resources, and URLs to create a docket of such stuff! Add to your collection and save them for later use.",
     tags: ["HTML5", "ReactJS", "Firebase", "TailwindCSS"],
     link: "https://bookmaarks.netlify.app/",
     repo: "https://github.com/Logan1x/bookMarks",
@@ -75,7 +75,7 @@ export const projectData = [
     projectName: "Vaccine Near Me",
     projectDate: "May 2021",
     projectDescription:
-      "A simple to use web-app built upon ReactJS  for locating vaccination centers near you with an ease using official CoWin API to fetch real-time data.",
+      "A simple to use web app built upon ReactJS  for locating vaccination centers near you with ease using official CoWin API to fetch real-time data.",
     tags: ["HTML5, CSS3, ReactJS"],
     link: "https://covid-vaccine-finder.netlify.app/",
     repo: "https://github.com/Logan1x/vaccineNearMe",
@@ -84,7 +84,7 @@ export const projectData = [
     projectName: "Keep Clone React",
     projectDate: "April 2021",
     projectDescription:
-      "An open-source replica of the Google Keep project built upon ReactJS where users can organise their notes with secure authentication and CRUD support.",
+      "An open-source replica of the Google Keep project built upon ReactJS where users can organize their notes with secure authentication and CRUD support.",
     tags: ["HTML5", "CSS3", "ReactJS"],
     link: "https://react-keep-clone.netlify.app/",
     repo: "https://github.com/Logan1x/keep-clone-react",
@@ -118,7 +118,7 @@ export const projectData = [
   {
     projectName: "Lucky BirthDay",
     projectDate: "Aug 2021",
-    projectDescription: "Find out if sum of your birthday is lucky or not.",
+    projectDescription: "Find out if the sum of your birthday is lucky or not.",
     tags: ["VanillaJS", "Tailwind"],
     link: "https://birthday-lucky-neog.netlify.app/",
     repo: "https://github.com/Logan1x/luckyBirthday",
@@ -127,7 +127,7 @@ export const projectData = [
     projectName: "Cash Register Manager",
     projectDate: "Aug 2021",
     projectDescription:
-      "A cash register manager which gives you change in minimum number of notes.",
+      "A cash register manager which gives you change in a minimum number of notes.",
     tags: ["VanillaJS", "Tailwind"],
     link: "https://cash-register-manager-neog.netlify.app/",
     repo: "https://github.com/Logan1x/cashRegister",
@@ -136,7 +136,7 @@ export const projectData = [
     projectName: "GoodBook",
     projectDate: "Jan 2021",
     projectDescription:
-      "A book recommendation app, that gives different books for different genre",
+      "A book recommendation app, that gives different books for different genres",
     tags: ["HTML5", "CSS3", "ReactJS"],
     link: "https://csb-buhog.netlify.app/",
     repo: "https://github.com/Logan1x/GoodBook",
@@ -144,7 +144,7 @@ export const projectData = [
   {
     projectName: "Emoji Meaning",
     projectDate: "Dec 2020",
-    projectDescription: "A ReactJS Project to find meaning of several emoji's.",
+    projectDescription: "A ReactJS Project to find the meaning of several emojis.",
     tags: ["HTML5", "CSS3", "ReactJS"],
     link: "https://knowthisemoji.netlify.app/",
     repo: "https://github.com/Logan1x/emoji-meaning",
@@ -171,7 +171,7 @@ export const projectData = [
     projectName: "Nucleotide Sequence Generator",
     projectDate: "Jul 2020",
     projectDescription:
-      "This project is to generate random sequence of DNA nucleotides (i.e. A, G, T, C) and also to find reverse complement of that particular sequence.",
+      "This project is to generate a random sequence of DNA nucleotides (i.e. A, G, T, C) and also to find the reverse complement of that particular sequence.",
     tags: ["Python", "Flask"],
     link: "https://nucleotide-generator.herokuapp.com/",
     repo: "https://github.com/Logan1x/Nucleotide-Sequence-generator",
@@ -180,7 +180,7 @@ export const projectData = [
     projectName: "Banana Translator",
     projectDate: "Dec 2020",
     projectDescription:
-      "This project is vanilla javascript project which uses api from funtranslations.com to translate text into minion language.",
+      "This project is a vanilla javascript project which uses API from funtranslations.com to translate text into minion language.",
     tags: ["HTML", "CSS", "VanillaJS"],
     link: "https://banana-trans.netlify.app/",
     repo: "https://github.com/Logan1x/banana_translator",
@@ -197,7 +197,7 @@ export const projectData = [
   {
     projectName: "Emoji Meaning",
     projectDate: "Dec 2020",
-    projectDescription: "A ReactJS Project to find meaning of several emoji's.",
+    projectDescription: "A ReactJS Project to find the meaning of several emoji's.",
     tags: ["HTML", "CSS", "ReactJS"],
     link: "https://knowthisemoji.netlify.app/",
     repo: "https://github.com/Logan1x/emoji-meaning",
@@ -206,7 +206,7 @@ export const projectData = [
     projectName: "Change The Navbar",
     projectDate: "Jul 2020",
     projectDescription:
-      "A vanilla javascript experiment to learn about queryselector.",
+      "A vanilla javascript experiment to learn about query selector.",
     tags: ["HTML", "CSS", "VanillaJS"],
     link: "https://logan1x.github.io/changethenavbar/",
     repo: "https://github.com/Logan1x/changethenavbar",
@@ -215,7 +215,7 @@ export const projectData = [
     projectName: "DNA-Binder",
     projectDate: "Nov 2020",
     projectDescription:
-      "A Machine Learning Project to predict DNA binders for given test sequence.",
+      "A Machine Learning Project to Predict DNA Binders for given test sequence.",
     tags: ["Python", "Machine Learning"],
     link: "",
     repo: "https://github.com/Logan1x/DNA-Binder",
@@ -224,7 +224,7 @@ export const projectData = [
     projectName: "Classroom",
     projectDate: "Aug 2020",
     projectDescription:
-      "An open source minimal alternative to Google classroom, powered by Django.",
+      "An open source minimal alternative to Google Classroom, powered by Django.",
     tags: ["Python", "Django"],
     link: "https://parthpandyappp.github.io/Classroom/",
     repo: "https://github.com/parthpandyappp/Classroom",
@@ -232,7 +232,7 @@ export const projectData = [
   {
     projectName: "Year Progress",
     projectDate: "Jun 2020",
-    projectDescription: "Year Progress Bot, Made with flask",
+    projectDescription: "Year Progress Bot, Made with Flask",
     tags: ["Python", "Flask"],
     link: "https://year-progres.herokuapp.com/",
     repo: "https://github.com/Logan1x/Year-Progress",
