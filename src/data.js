@@ -48,7 +48,7 @@ export const projectData = [
     projectName: "Glee",
     projectDate: "March 2022",
     projectDescription:
-      "A Video Library to watch and share your favorite videos.Made with ReactJS, ContextAPI, and Mockbee.",
+      "A Video Library to watch and share your favorite videos. Made with ReactJS, ContextAPI, and Mockbee.",
     tags: ["HTML5", "CSS3", "ReactJS", "Mockbee"],
     link: "https://glee-project.netlify.app/",
     repo: "https://github.com/Logan1x/Glee",
