@@ -53,6 +53,15 @@ export const projectData = [
     link: "https://glee-project.netlify.app/",
     repo: "https://github.com/Logan1x/Glee",
   },
+   {
+    projectName: "LibreUI",
+    projectDate: "Feb 2022",
+    projectDescription:
+      "LibreUI is a free and open source component library for CSS styling.",
+    tags: ["HTML5", "CSS3", "Javascript"],
+    link: "https://libreui.netlify.app/",
+    repo: "https://github.com/Logan1x/LibreUI",
+  },
   {
     projectName: "Reademy",
     projectDate: "Jan 2022",
