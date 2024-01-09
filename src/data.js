@@ -1,9 +1,25 @@
 export const projectData = [
   {
+    projectName: "Check In Mate",
+    projectDate: "Jan 2024",
+    projectDescription:
+      "A simple check-in app for your daily tasks to maintain your routine.",
+    tags: ["ReactJS", "React-Native", "Firebase"],
+    link: "https://github.com/Logan1x/Check-In-Mate/releases/tag/v3",
+    repo: "https://github.com/Logan1x/Check-In-Mate",
+  },
+  {
+    projectName: "DevDash-CLI",
+    projectDate: "Nov 2023",
+    projectDescription: "A portfolio of mine packaged as an NPM module.",
+    tags: ["VanillaJS", "NPM", "NodeJS"],
+    link: "https://www.npmjs.com/package/@logan1x/devdash-cli",
+    repo: "https://github.com/Logan1x/DevDashCLI",
+  },
+  {
     projectName: "unSelected",
     projectDate: "November 2022",
-    projectDescription:
-      "Generate your cover letter using OpenAI",
+    projectDescription: "Generate your cover letter using OpenAI",
     tags: ["HTML5", "TailwindCSS", "ReactJS", "NextJS"],
     link: "https://unselected.vercel.app/",
     repo: "https://github.com/Logan1x/unselected",
@@ -53,7 +69,7 @@ export const projectData = [
     link: "https://glee-project.netlify.app/",
     repo: "https://github.com/Logan1x/Glee",
   },
-   {
+  {
     projectName: "LibreUI",
     projectDate: "Feb 2022",
     projectDescription:
@@ -153,7 +169,8 @@ export const projectData = [
   {
     projectName: "Emoji Meaning",
     projectDate: "Dec 2020",
-    projectDescription: "A ReactJS Project to find the meaning of several emojis.",
+    projectDescription:
+      "A ReactJS Project to find the meaning of several emojis.",
     tags: ["HTML5", "CSS3", "ReactJS"],
     link: "https://knowthisemoji.netlify.app/",
     repo: "https://github.com/Logan1x/emoji-meaning",
@@ -206,7 +223,8 @@ export const projectData = [
   {
     projectName: "Emoji Meaning",
     projectDate: "Dec 2020",
-    projectDescription: "A ReactJS Project to find the meaning of several emoji's.",
+    projectDescription:
+      "A ReactJS Project to find the meaning of several emoji's.",
     tags: ["HTML", "CSS", "ReactJS"],
     link: "https://knowthisemoji.netlify.app/",
     repo: "https://github.com/Logan1x/emoji-meaning",
