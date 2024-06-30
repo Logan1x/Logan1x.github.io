@@ -28,7 +28,7 @@ function loadData(doc) {
   tags.innerHTML = "<b>Tech-Stack</b> : " + doc.tags.join(", ");
   repo.textContent = "Repo";
 
-  if (doc.link != "") {
+  if (doc.link) {
     link.setAttribute("href", doc.link);
     link.textContent = "Link";
     btn.appendChild(link);
