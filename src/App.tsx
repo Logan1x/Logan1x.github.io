@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import heroImage from "../public/khushal.jpg";
+import { useState, useEffect, JSX } from "react";
+const heroImage = "/khushal.jpg";
 
 type BioType = "short" | "long";
 type LinkType = {
