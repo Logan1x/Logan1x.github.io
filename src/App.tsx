@@ -15,7 +15,7 @@ function App(): JSX.Element {
   const initialLinks: LinkType[] = [
     {
       name: "email",
-      url: "mailto://reach@khushal.live",
+      url: "mailto:reach@khushal.live",
       color: getRandomColor(),
     },
     {
@@ -219,7 +219,7 @@ function App(): JSX.Element {
                 on local/online meetups. If you would like to invite me as
                 speaker, send me an email at{" "}
                 <a
-                  href="mailto://reach@khushal.live"
+                  href="mailto:reach@khushal.live"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
