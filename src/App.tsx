@@ -134,7 +134,7 @@ function App(): JSX.Element {
               <p>
                 You should{" "}
                 <a
-                  href="https://logan1x.github.io"
+                  href="https://github.com/logan1x"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
