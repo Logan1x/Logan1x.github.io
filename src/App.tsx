@@ -1,4 +1,4 @@
-import { useState, useEffect, JSX } from "react";
+import { useState, JSX, useMemo, useLayoutEffect } from "react";
 const heroImage = "/khushal.jpg";
 
 type BioType = "short" | "long";
@@ -12,46 +12,57 @@ function App(): JSX.Element {
   const [activeBio, setActiveBio] = useState<BioType>("short");
   const colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
 
-  const initialLinks: LinkType[] = [
-    {
-      name: "email",
-      url: "mailto:reach@khushal.live",
-      color: getRandomColor(),
-    },
-    {
-      name: "blog",
-      url: "https://logan1x.hashnode.dev/",
-      color: getRandomColor(),
-    },
-    {
-      name: "github",
-      url: "https://github.com/logan1x",
-      color: getRandomColor(),
-    },
-    {
-      name: "twitter",
-      url: "https://twitter.com/herkuch",
-      color: getRandomColor(),
-    },
-    {
-      name: "bluesky",
-      url: "https://bsky.app/profile/logan1x.bsky.social",
-      color: getRandomColor(),
-    },
-    {
-      name: "linkedin",
-      url: "https://linkedin.com/in/logan1x",
-      color: getRandomColor(),
-    },
-  ];
-
-  const [links, setLinks] = useState<LinkType[]>(initialLinks);
-
   function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
   }
 
-  useEffect(() => {
+  const initialLinks: LinkType[] = useMemo(
+    () => [
+      {
+        name: "email",
+        url: "mailto:reach@khushal.live",
+        color: getRandomColor(),
+      },
+      {
+        name: "blog",
+        url: "https://logan1x.hashnode.dev/",
+        color: getRandomColor(),
+      },
+      {
+        name: "github",
+        url: "https://github.com/logan1x",
+        color: getRandomColor(),
+      },
+      {
+        name: "twitter",
+        url: "https://twitter.com/herkuch",
+        color: getRandomColor(),
+      },
+      {
+        name: "bluesky",
+        url: "https://bsky.app/profile/logan1x.bsky.social",
+        color: getRandomColor(),
+      },
+      {
+        name: "linkedin",
+        url: "https://linkedin.com/in/logan1x",
+        color: getRandomColor(),
+      },
+    ],
+    []
+  );
+
+  const [links, setLinks] = useState<LinkType[]>(initialLinks);
+  useLayoutEffect(() => {
+    // This runs synchronously after DOM mutations but before painting
+    // Force an immediate color update
+    setLinks((prevLinks) =>
+      prevLinks.map((link) => ({
+        ...link,
+        color: getRandomColor(),
+      }))
+    );
+
     const intervalId = setInterval(() => {
       setLinks((prevLinks) =>
         prevLinks.map((link) => ({
@@ -76,6 +87,7 @@ function App(): JSX.Element {
             src={heroImage}
             alt="Profile picture"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
       </div>
