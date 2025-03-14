@@ -215,7 +215,7 @@ const Artifacts = ({
     <div className="max-w-2xl mx-auto">
       <button
         onClick={() => setShowArtifacts(false)}
-        className="text-lg text-gray-400 pt-4 flex items-center gap-2"
+        className="text-lg text-gray-400 pt-4 flex items-center gap-2 cursor-pointer"
       >
         <span>
           <svg
