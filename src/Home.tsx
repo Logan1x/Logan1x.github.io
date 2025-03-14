@@ -78,6 +78,15 @@ function Home({
         <div className="text-center md:text-left">
           <h1 className="text-3xl">Khushal Sharma</h1>
           <h2 className="text-xl text-gray-400">Full time builder</h2>
+          <button
+            className="mt-2 px-4 py-1 rounded-full border-2 capitalize border-gray-600 text-gray-600 cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={() => {
+              navigator.clipboard.writeText("reach@khushal.live");
+              alert("Email copied to clipboard!!");
+            }}
+          >
+            hire me
+          </button>
         </div>
         <div className="rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 overflow-hidden">
           <img
@@ -162,17 +171,6 @@ function Home({
               </p>
               <p>
                 You should{" "}
-                <span
-                  style={{
-                    textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
-                  }}
-                  onClick={() => setShowArtifacts(true)}
-                  className="cursor-pointer"
-                >
-                  check out things I am proud of
-                </span>
-                ,{" "}
                 <a
                   href="https://logan1x.hashnode.dev/"
                   style={{
@@ -182,7 +180,7 @@ function Home({
                 >
                   read my blog
                 </a>{" "}
-                or{" "}
+                ,{" "}
                 <a
                   href="https://www.youtube.com/watch?v=Biak99FOcto&list=PLTDKeEQ2HNZQRlDl3JKfc4VD1yykKSXv8"
                   style={{
@@ -190,26 +188,19 @@ function Home({
                     textDecoration: "underline",
                   }}
                 >
-                  watch my talks!
+                  watch my talks
                 </a>{" "}
-              </p>
-              <p>
-                I am on lookout for new opportunities. If you have something
-                exciting, send me an email at{" "}
+                or{" "}
                 <span
-                  className="cursor-pointer"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
                   }}
-                  onClick={() => {
-                    navigator.clipboard.writeText("reach@khushal.live");
-                    alert("Copied to clipboard!!");
-                  }}
+                  onClick={() => setShowArtifacts(true)}
+                  className="cursor-pointer"
                 >
-                  reach@khushal.live
+                  check out things I am proud of!
                 </span>
-                .
               </p>
             </div>
           ) : (

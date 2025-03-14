@@ -238,7 +238,7 @@ const Artifacts = ({
 
       <div className="w-full pt-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-semibold">Artifacts</h1>
+          <h1 className="text-3xl ">Artifacts</h1>
           <p className="text-lg text-gray-400 my-2">
             Here are things I am proud of.
           </p>
