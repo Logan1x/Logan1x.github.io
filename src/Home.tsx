@@ -9,9 +9,9 @@ type LinkType = {
 };
 
 function Home({
-  setShowProjects,
+  setShowArtifacts,
 }: {
-  setShowProjects: (showProjects: boolean) => void;
+  setShowArtifacts: (showArtifacts: boolean) => void;
 }) {
   const [activeBio, setActiveBio] = useState<BioType>("short");
   const colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
@@ -167,7 +167,7 @@ function Home({
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
                   }}
-                  onClick={() => setShowProjects(true)}
+                  onClick={() => setShowArtifacts(true)}
                   className="cursor-pointer"
                 >
                   check out things I am proud of
