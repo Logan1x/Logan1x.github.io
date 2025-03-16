@@ -77,7 +77,7 @@ function Home({
       <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full gap-6 pt-20">
         <div className="text-center md:text-left">
           <h1 className="text-3xl">Khushal Sharma</h1>
-          <h2 className="text-xl text-gray-400">Full time builder</h2>
+          <h2 className="text-xl text-gray-400">Up for a challenge</h2>
           <button
             className="mt-2 px-4 py-1 rounded-full border-2 capitalize border-gray-600 text-gray-600 cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() => {
