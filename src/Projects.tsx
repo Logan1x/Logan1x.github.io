@@ -115,12 +115,19 @@ const Artifacts = ({
   const initialProjects: ProjectType[] = useMemo(
     () => [
       {
-        title: "[SRTify]: Generating multilingual subtitles from any video",
-        links: [{ text: "SRTify", link: "https://github.com/Logan1x/SRTify" }],
+        title: "[Shop Naturally]: Like asking a friend which phone to buy",
+        links: [
+          {
+            text: "Shop Naturally",
+            link: "https://shop-naturally.vercel.app/?ref=portfolio",
+          },
+        ],
       },
       {
         title: "[iQuiz]: Instantly create and enjoy quizzes using AI",
-        links: [{ text: "iQuiz", link: "https://iquiz-ai.vercel.app/" }],
+        links: [
+          { text: "iQuiz", link: "https://iquiz-ai.vercel.app/?ref=portfolio" },
+        ],
       },
     ],
     []
