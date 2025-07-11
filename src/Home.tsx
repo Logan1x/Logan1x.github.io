@@ -72,8 +72,8 @@ function Home() {
 
   return (
     <div>
-      <div className="flex flex-col-reverse md:flex-col items-center md:items-start justify-between w-full gap-6 pt-20">
-        <div className="rounded-full w-32 h-32 overflow-hidden   [transform-origin:0%_100%] hover:[transform:translate(4px,4px)_rotate(-12deg)] transition-transform duration-300 [box-shadow:-3px_5px_13px_rgba(0,0,0,0.1),_-13px_20px_24px_rgba(0,0,0,0.09),_-29px_45px_32px_rgba(0,0,0,0.05)]">
+      <div className="flex flex-col items-center md:items-start justify-between w-full gap-4 pt-20">
+        <div className="rounded-full w-24 h-24 overflow-hidden border-2 border-gray-300 shadow-xl [transform-origin:0%_100%] hover:[transform:translate(4px,4px)_rotate(-12deg)] transition-transform duration-300 ease-in-out">
           <img
             src={heroImage}
             alt="Profile picture"
@@ -82,7 +82,9 @@ function Home() {
         </div>
         <div className="text-center md:text-left">
           <h1 className="text-3xl">Khushal Sharma</h1>
-          <h2 className="text-xl text-gray-400 mb-4">Up for a challenge</h2>
+          <h2 className="text-lg text-gray-400 mb-4">
+            Turning ideas into websites
+          </h2>
         </div>
       </div>
 
