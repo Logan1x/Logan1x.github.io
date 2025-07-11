@@ -27,11 +27,9 @@ type ProjectType = {
   links?: LinkItem[];
 };
 
-const Artifacts = ({
-  setShowArtifacts,
-}: {
-  setShowArtifacts: (showArtifacts: boolean) => void;
-}) => {
+import { Link } from "react-router-dom";
+
+const Projects = () => {
   const [colorizedLinks, setColorizedLinks] = useState<{
     achievements: ArtifactType[];
     talks: TalkType[];
@@ -220,8 +218,8 @@ const Artifacts = ({
 
   return (
     <div className="max-w-2xl mx-auto">
-      <button
-        onClick={() => setShowArtifacts(false)}
+      <Link
+        to="/"
         className="text-lg text-gray-400 pt-4 flex items-center gap-2 cursor-pointer"
       >
         <span>
@@ -241,7 +239,7 @@ const Artifacts = ({
           </svg>
         </span>
         <span>Go back</span>
-      </button>
+      </Link>
 
       <div className="w-full pt-8">
         <div className="text-center mb-8">
@@ -323,4 +321,4 @@ const Artifacts = ({
   );
 };
 
-export default Artifacts;
+export default Projects;

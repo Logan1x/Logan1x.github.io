@@ -1,5 +1,5 @@
 import { useState, useMemo, useLayoutEffect } from "react";
-const heroImage = "/khushal.jpg";
+const heroImage = "/khushal_nobg.png";
 
 type BioType = "short" | "long";
 type LinkType = {
@@ -8,11 +8,9 @@ type LinkType = {
   color: string;
 };
 
-function Home({
-  setShowArtifacts,
-}: {
-  setShowArtifacts: (showArtifacts: boolean) => void;
-}) {
+import { Link } from "react-router-dom";
+
+function Home() {
   const [activeBio, setActiveBio] = useState<BioType>("short");
   const colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
 
@@ -74,27 +72,18 @@ function Home({
 
   return (
     <div>
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full gap-6 pt-20">
-        <div className="text-center md:text-left">
-          <h1 className="text-3xl">Khushal Sharma</h1>
-          <h2 className="text-xl text-gray-400">Up for a challenge</h2>
-          <button
-            className="mt-2 px-4 py-1 rounded-full border-2 capitalize border-gray-600 text-gray-600 cursor-pointer hover:opacity-90 transition-opacity"
-            onClick={() => {
-              navigator.clipboard.writeText("reach@khushal.live");
-              alert("Email copied to clipboard!!");
-            }}
-          >
-            hire me
-          </button>
-        </div>
-        <div className="rounded-full w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 overflow-hidden">
+      <div className="flex flex-col-reverse md:flex-col items-center md:items-start justify-between w-full gap-6 pt-20">
+        <div className="rounded-full w-32 h-32 overflow-hidden border-2 border-gray-300 shadow">
           <img
             src={heroImage}
             alt="Profile picture"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover grayscale"
             loading="lazy"
           />
+        </div>
+        <div className="text-center md:text-left">
+          <h1 className="text-3xl">Khushal Sharma</h1>
+          <h2 className="text-xl text-gray-400 mb-4">Up for a challenge</h2>
         </div>
       </div>
 
@@ -103,7 +92,7 @@ function Home({
           link.name === "email" ? (
             <p
               key={link.name}
-              className="hover:opacity-90 transition-opacity cursor-pointer"
+              className="hover:opacity-90 transition-opacity cursor-pointer hover:text-gray-400"
               style={{
                 textDecorationColor: link.color,
                 textDecoration: "underline",
@@ -121,7 +110,7 @@ function Home({
               key={link.name}
               href={link.url}
               target={"_blank"}
-              className="hover:opacity-90 transition-opacity"
+              className="hover:opacity-90 transition-opacity hover:text-gray-400"
               style={{
                 textDecorationColor: link.color,
                 textDecoration: "underline",
@@ -149,6 +138,12 @@ function Home({
               {bioType}
             </button>
           ))}
+          <Link
+            to="/artifacts"
+            className="px-4 py-1 rounded-full border-2 capitalize border-gray-400 text-gray-400 hover:border-pink-500 hover:text-pink-500 transition-colors"
+          >
+            Projects
+          </Link>
         </div>
 
         <div className="text-xl mt-4 ">
@@ -158,6 +153,7 @@ function Home({
                 Hi there! My name is Khushal. I'm a Full Stack Software Engineer
                 at{" "}
                 <a
+                  className="hover:text-gray-400"
                   href="https://strandls.com/"
                   style={{
                     textDecorationColor: getRandomColor(),
@@ -172,6 +168,7 @@ function Home({
               <p>
                 You should{" "}
                 <a
+                  className="hover:text-gray-400"
                   href="https://logan1x.hashnode.dev/"
                   style={{
                     textDecorationColor: getRandomColor(),
@@ -182,6 +179,7 @@ function Home({
                 </a>{" "}
                 ,{" "}
                 <a
+                  className="hover:text-gray-400"
                   href="https://www.youtube.com/watch?v=Biak99FOcto&list=PLTDKeEQ2HNZQRlDl3JKfc4VD1yykKSXv8"
                   style={{
                     textDecorationColor: getRandomColor(),
@@ -196,10 +194,15 @@ function Home({
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
                   }}
-                  onClick={() => setShowArtifacts(true)}
                   className="cursor-pointer"
                 >
-                  check out things I am proud of!
+                  <Link
+                    to="/artifacts"
+                    className="underline hover:text-gray-400"
+                    style={{ textDecorationColor: getRandomColor() }}
+                  >
+                    check out things I am proud of!
+                  </Link>
                 </span>
               </p>
             </div>

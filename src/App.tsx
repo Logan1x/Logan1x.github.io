@@ -1,18 +1,18 @@
-import { useState, JSX } from "react";
+import { JSX } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Projects from "./Projects";
 import Home from "./Home";
 
 function App(): JSX.Element {
-  const [showArtifacts, setShowArtifacts] = useState(false);
-
   return (
-    <div className="max-w-2xl mx-auto flex flex-col items-center min-h-screen px-4 sm:px-6">
-      {showArtifacts ? (
-        <Projects setShowArtifacts={setShowArtifacts} />
-      ) : (
-        <Home setShowArtifacts={setShowArtifacts} />
-      )}
-    </div>
+    <BrowserRouter>
+      <div className="max-w-2xl mx-auto flex flex-col items-center min-h-screen px-4 sm:px-6">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/artifacts" element={<Projects />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
