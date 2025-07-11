@@ -73,12 +73,11 @@ function Home() {
   return (
     <div>
       <div className="flex flex-col-reverse md:flex-col items-center md:items-start justify-between w-full gap-6 pt-20">
-        <div className="rounded-full w-32 h-32 overflow-hidden border-2 border-gray-300 shadow">
+        <div className="rounded-full w-32 h-32 overflow-hidden   [transform-origin:0%_100%] hover:[transform:translate(4px,4px)_rotate(-12deg)] transition-transform duration-300 [box-shadow:-3px_5px_13px_rgba(0,0,0,0.1),_-13px_20px_24px_rgba(0,0,0,0.09),_-29px_45px_32px_rgba(0,0,0,0.05)]">
           <img
             src={heroImage}
             alt="Profile picture"
             className="w-full h-full object-cover grayscale"
-            loading="lazy"
           />
         </div>
         <div className="text-center md:text-left">
