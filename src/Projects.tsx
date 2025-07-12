@@ -199,6 +199,7 @@ const Projects = () => {
               <a
                 key={i}
                 href={href}
+                className="underline hover:text-gray-400"
                 target="_blank"
                 style={{
                   textDecorationColor: color,

@@ -130,10 +130,10 @@ function Home() {
             <button
               key={bioType}
               onClick={() => setActiveBio(bioType)}
-              className={`px-4 py-1 rounded-full border-2 capitalize ${
+              className={`px-4 py-1 rounded-full border-2 capitalize cursor-pointer ${
                 activeBio === bioType
                   ? "border-pink-500 text-pink-500"
-                  : "border-gray-400 text-gray-400"
+                  : "border-gray-400 text-gray-400 hover:border-pink-500 hover:text-pink-500 transition-colors duration-300"
               }`}
             >
               {bioType}
@@ -156,6 +156,7 @@ function Home() {
                 <a
                   className="hover:text-gray-400"
                   href="https://strandls.com/"
+                  target="_blank"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
@@ -171,6 +172,7 @@ function Home() {
                 <a
                   className="hover:text-gray-400"
                   href="https://logan1x.hashnode.dev/"
+                  target="_blank"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
@@ -181,6 +183,7 @@ function Home() {
                 ,{" "}
                 <a
                   className="hover:text-gray-400"
+                  target="_blank"
                   href="https://www.youtube.com/watch?v=Biak99FOcto&list=PLTDKeEQ2HNZQRlDl3JKfc4VD1yykKSXv8"
                   style={{
                     textDecorationColor: getRandomColor(),
@@ -215,6 +218,8 @@ function Home() {
                 and Python. Currently, I work at{" "}
                 <a
                   href="https://strandls.com/"
+                  className="hover:text-gray-400"
+                  target="_blank"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
@@ -229,6 +234,8 @@ function Home() {
                 spare time, you will see me posting my runs on{" "}
                 <a
                   href="https://www.strava.com/athletes/111238961"
+                  target="_blank"
+                  className="hover:text-gray-400"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
@@ -239,6 +246,8 @@ function Home() {
                 , clicking{" "}
                 <a
                   href="https://unsplash.com/@logan1x"
+                  target="_blank"
+                  className="hover:text-gray-400"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
@@ -252,6 +261,8 @@ function Home() {
                 I also give{" "}
                 <a
                   href="https://www.youtube.com/watch?v=Biak99FOcto&list=PLTDKeEQ2HNZQRlDl3JKfc4VD1yykKSXv8"
+                  className="hover:text-gray-400"
+                  target="_blank"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
@@ -262,7 +273,7 @@ function Home() {
                 on local/online meetups. If you would like to invite me as
                 speaker, send me an email at{" "}
                 <span
-                  className="cursor-pointer"
+                  className="cursor-pointer hover:text-gray-400"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecoration: "underline",
