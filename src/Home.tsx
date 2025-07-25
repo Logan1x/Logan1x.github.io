@@ -308,8 +308,8 @@ function Home() {
 
       {isModalOpen && (
         <div className="fixed inset-0  bg-opacity-20 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-          <div className="rounded-lg w-full max-h-[90vh] overflow-auto">
-            <div className="absolute top-0 right-0 flex justify-end p-4">
+          <div className="rounded-lg w-full h-full md:max-h-[90vh] overflow-auto">
+            <div className="absolute top-0 right-0 flex justify-end p-4 z-10">
               <button
                 onClick={() => setIsModalOpen(false)}
                 className="text-gray-500 hover:text-gray-700"
@@ -317,7 +317,7 @@ function Home() {
                 Close
               </button>
             </div>
-            <div className="p-4">
+            <div className="p-4 mt-8">
               <Cal calLink="khushal/15min" config={{ theme: "light" }}></Cal>
             </div>
           </div>
