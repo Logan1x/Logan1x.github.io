@@ -9,9 +9,11 @@ type LinkType = {
 };
 
 import { Link } from "react-router-dom";
+import Cal from "@calcom/embed-react";
 
 function Home() {
   const [activeBio, setActiveBio] = useState<BioType>("short");
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
 
   function getRandomColor() {
@@ -23,6 +25,11 @@ function Home() {
       {
         name: "email",
         url: "reach@khushal.live",
+        color: getRandomColor(),
+      },
+      {
+        name: "calender",
+        url: "",
         color: getRandomColor(),
       },
       {
@@ -90,7 +97,7 @@ function Home() {
 
       <div className="flex flex-wrap justify-center gap-4 text-lg mt-8">
         {links.map((link) =>
-          link.name === "email" ? (
+          link.name === "email" || link.name === "calender" ? (
             <p
               key={link.name}
               className="hover:opacity-90 transition-opacity cursor-pointer hover:text-gray-400"
@@ -100,8 +107,12 @@ function Home() {
                 textDecorationThickness: 2,
               }}
               onClick={() => {
-                navigator.clipboard.writeText(link.url);
-                alert("Copied to clipboard!!");
+                if (link.name === "email") {
+                  navigator.clipboard.writeText(link.url);
+                  alert("Copied to clipboard!!");
+                } else if (link.name === "calender") {
+                  setIsModalOpen(true);
+                }
               }}
             >
               {link.name}
@@ -291,6 +302,24 @@ function Home() {
           )}
         </div>
       </div>
+
+      {isModalOpen && (
+        <div className="fixed inset-0  bg-opacity-20 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className="rounded-lg w-full max-h-[90vh] overflow-auto">
+            <div className="absolute top-0 right-0 flex justify-end p-4">
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                Close
+              </button>
+            </div>
+            <div className="p-4">
+              <Cal calLink="khushal/15min" config={{ theme: "light" }}></Cal>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
