@@ -113,7 +113,7 @@ const Projects = () => {
   const initialProjects: ProjectType[] = useMemo(
     () => [
       {
-        title: "[Shop Naturally]: Like asking a friend which phone to buy",
+        title: "[Shop Naturally]: Shop phones like asking a friend",
         links: [
           {
             text: "Shop Naturally",
@@ -203,7 +203,7 @@ const Projects = () => {
                 target="_blank"
                 style={{
                   textDecorationColor: color,
-                  textDecoration: "underline",
+                  textDecorationLine: "underline",
                   textDecorationThickness: 2,
                 }}
               >
@@ -218,7 +218,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto mb-4">
       <Link
         to="/"
         className="text-lg text-gray-400 pt-4 flex items-center gap-2 cursor-pointer"
@@ -299,7 +299,7 @@ const Projects = () => {
             target="_blank"
             style={{
               textDecorationColor: getRandomColor(),
-              textDecoration: "underline",
+              textDecorationLine: "underline",
             }}
           >
             github
@@ -310,7 +310,7 @@ const Projects = () => {
             target="_blank"
             style={{
               textDecorationColor: getRandomColor(),
-              textDecoration: "underline",
+              textDecorationLine: "underline",
             }}
           >
             youtube

@@ -103,7 +103,7 @@ function Home() {
               className="hover:opacity-90 transition-opacity cursor-pointer hover:text-gray-400"
               style={{
                 textDecorationColor: link.color,
-                textDecoration: "underline",
+                textDecorationLine: "underline",
                 textDecorationThickness: 2,
               }}
               onClick={() => {
@@ -125,7 +125,7 @@ function Home() {
               className="hover:opacity-90 transition-opacity hover:text-gray-400"
               style={{
                 textDecorationColor: link.color,
-                textDecoration: "underline",
+                textDecorationLine: "underline",
                 textDecorationThickness: 2,
               }}
             >
@@ -170,7 +170,7 @@ function Home() {
                   target="_blank"
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                 >
                   StrandLS
@@ -186,7 +186,7 @@ function Home() {
                   target="_blank"
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                 >
                   read my blog
@@ -198,7 +198,7 @@ function Home() {
                   href="https://www.youtube.com/watch?v=Biak99FOcto&list=PLTDKeEQ2HNZQRlDl3JKfc4VD1yykKSXv8"
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                 >
                   watch my talks
@@ -207,14 +207,17 @@ function Home() {
                 <span
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                   className="cursor-pointer"
                 >
                   <Link
                     to="/artifacts"
-                    className="underline hover:text-gray-400"
-                    style={{ textDecorationColor: getRandomColor() }}
+                    className="hover:text-gray-400"
+                    style={{
+                      textDecorationColor: getRandomColor(),
+                      textDecorationLine: "underline",
+                    }}
                   >
                     check out things I am proud of!
                   </Link>
@@ -233,7 +236,7 @@ function Home() {
                   target="_blank"
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                 >
                   Strand Life Sciences
@@ -249,7 +252,7 @@ function Home() {
                   className="hover:text-gray-400"
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                 >
                   strava
@@ -261,7 +264,7 @@ function Home() {
                   className="hover:text-gray-400"
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                 >
                   pictures
@@ -276,7 +279,7 @@ function Home() {
                   target="_blank"
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                 >
                   tiny talks
@@ -287,7 +290,7 @@ function Home() {
                   className="cursor-pointer hover:text-gray-400"
                   style={{
                     textDecorationColor: getRandomColor(),
-                    textDecoration: "underline",
+                    textDecorationLine: "underline",
                   }}
                   onClick={() => {
                     navigator.clipboard.writeText("reach@khushal.live");

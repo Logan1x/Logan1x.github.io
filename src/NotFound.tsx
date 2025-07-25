@@ -25,7 +25,7 @@ const NotFound: React.FC = () => {
         className="underline "
         style={{
           textDecorationColor: color,
-          textDecoration: "underline",
+          textDecorationLine: "underline",
           textDecorationThickness: 2,
         }}
       >
