@@ -122,18 +122,22 @@ const Projects = () => {
   const initialProjects: ProjectType[] = useMemo(
     () => [
       {
+        title:
+          "[Fire in the belly]: Your personalized tracker for exams, hackathons, and beyond.",
+        links: [
+          {
+            text: "Fire in the belly",
+            link: "https://www.ftbhustle.com/?ref=khushal",
+          },
+        ],
+      },
+      {
         title: "[Shop Naturally]: Shop phones like asking a friend",
         links: [
           {
             text: "Shop Naturally",
             link: "https://shop-naturally.vercel.app/?ref=portfolio",
           },
-        ],
-      },
-      {
-        title: "[iQuiz]: Instantly create and enjoy quizzes using AI",
-        links: [
-          { text: "iQuiz", link: "https://iquiz-ai.vercel.app/?ref=portfolio" },
         ],
       },
     ],
