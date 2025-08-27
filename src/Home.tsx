@@ -1,5 +1,5 @@
 import { useState, useMemo, useLayoutEffect } from "react";
-const heroImage = "/khushal_nobg.png";
+const heroImage = "/khushal_nobg.webp";
 
 type BioType = "short" | "long";
 type LinkType = {
