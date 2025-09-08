@@ -136,7 +136,7 @@ const Projects = () => {
         links: [
           {
             text: "Shop Naturally",
-            link: "https://shop-naturally.vercel.app/?ref=portfolio",
+            link: "https://shop.khushal.live/?ref=portfolio",
           },
         ],
       },
