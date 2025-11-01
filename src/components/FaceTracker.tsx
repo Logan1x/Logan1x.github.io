@@ -1,24 +1,19 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import useGazeTracking from "../hooks/useGazeTracking";
-import "./FaceTracker.css";
 
-/**
- * FaceTracker Component
- * Displays a face that follows mouse/touch movement
- */
 export default function FaceTracker({
   className = "",
   basePath = "/faces/",
   showDebug = false,
 }) {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const { currentImage, isLoading, error } = useGazeTracking(
     containerRef,
     basePath
   );
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: { clientX: number; clientY: number }) => {
     if (!containerRef.current) return;
 
     const rect = containerRef.current.getBoundingClientRect();
