@@ -1,5 +1,5 @@
 import { useState, useMemo, useLayoutEffect } from "react";
-const heroImage = "/khushal_nobg.webp";
+import FaceTracker from "./components/FaceTracker";
 
 type BioType = "short" | "long";
 type LinkType = {
@@ -80,13 +80,14 @@ function Home() {
   return (
     <div>
       <div className="flex flex-col items-center md:items-start justify-between w-full gap-4 pt-20">
-        <div className="rounded-full w-24 h-24 overflow-hidden shadow-2xl shadow-pink-400/20 [transform-origin:0%_100%] hover:[transform:translate(4px,4px)_rotate(-12deg)] transition-transform duration-300 ease-in-out bg-gray-500/20 border-2 border-gray-400/10">
-          <img
+        {/* <div className="rounded-full w-24 h-24 overflow-hidden shadow-2xl shadow-pink-400/20 [transform-origin:0%_100%] hover:[transform:translate(4px,4px)_rotate(-12deg)] transition-transform duration-300 ease-in-out bg-gray-500/20 border-2 border-gray-400/10"> */}
+        {/* <img
             src={heroImage}
             alt="Profile picture"
             className="w-full h-full object-cover grayscale"
-          />
-        </div>
+          /> */}
+        <FaceTracker />
+        {/* </div> */}
         <div className="text-center md:text-left">
           <h1 className="text-3xl">Khushal Sharma</h1>
           <h2 className="text-lg text-gray-400 mb-4">
