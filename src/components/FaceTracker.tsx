@@ -34,19 +34,15 @@ export default function FaceTracker({
   return (
     <div
       ref={containerRef}
-      className={`face-tracker ${className}`}
-      style={{ width: "200px", height: "200px" }}
+      className={`face-tracker rounded-full w-24 h-24 overflow-hidden shadow-2xl shadow-pink-400/20 bg-gray-500/20 border-2 border-gray-400/10 ${className}`}
       onMouseMove={handleMouseMove}
     >
       {currentImage && (
         <img
           src={currentImage}
           alt="Face following gaze"
-          className="face-image"
+          className="face-image w-full h-full object-contain grayscale"
           style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
             transition: "opacity 0.1s ease-out",
             display: "block",
           }}
