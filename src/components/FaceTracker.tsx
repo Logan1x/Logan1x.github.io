@@ -46,7 +46,6 @@ export default function FaceTracker({
             transition: "opacity 0.1s ease-out",
             display: "block",
           }}
-          onLoad={() => console.log("Image loaded:", currentImage)}
           onError={(e) =>
             console.error("Image failed to load:", currentImage, e)
           }

@@ -13,6 +13,20 @@ const STEP = 5;
 const SIZE = 256;
 
 /**
+ * Preloads all face images for better performance
+ */
+function preloadAllFaceImages(basePath: string): void {
+  const images = [];
+  for (let py = -15; py <= 15; py += 3) {
+    for (let px = -15; px <= 15; px += 3) {
+      const img = new Image();
+      img.src = `${basePath}gaze_px${px}_py${py}_${SIZE}.webp`;
+      images.push(img);
+    }
+  }
+}
+
+/**
  * Converts normalized coordinates [-1, 1] to grid coordinates
  */
 function quantizeToGrid(val: number): number {
@@ -82,7 +96,6 @@ export function useGazeTracking(
       const filename = gridToFilename(px, py);
       const imagePath = `${basePath}${filename}`;
 
-      console.log("Generated image path:", imagePath);
       setCurrentImage(imagePath);
     },
     [basePath]
@@ -104,6 +117,11 @@ export function useGazeTracking(
     },
     [updateGaze]
   );
+
+  // Preload all face images on mount
+  useEffect(() => {
+    preloadAllFaceImages(basePath);
+  }, [basePath]);
 
   useEffect(() => {
     const container = containerRef.current;
