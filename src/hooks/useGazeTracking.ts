@@ -82,7 +82,6 @@ export function useGazeTracking(
       const filename = gridToFilename(px, py);
       const imagePath = `${basePath}${filename}`;
 
-      console.log("Generated image path:", imagePath);
       setCurrentImage(imagePath);
     },
     [basePath]
