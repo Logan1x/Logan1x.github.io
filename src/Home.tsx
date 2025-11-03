@@ -52,6 +52,11 @@ function Home() {
         url: "https://linkedin.com/in/logan1x",
         color: getRandomColor(),
       },
+      {
+        name: "resume",
+        url: "https://fra.cloud.appwrite.io/v1/storage/buckets/resume/files/resume/view?project=68fcdfca000d9b10c995",
+        color: getRandomColor(),
+      },
     ],
     []
   );
@@ -137,7 +142,7 @@ function Home() {
       </div>
 
       <div className="mt-8 w-full">
-        <div className="flex justify-center space-x-2">
+        <div className="flex justify-center gap-2 flex-wrap ">
           {(["short", "long"] as BioType[]).map((bioType) => (
             <button
               key={bioType}
