@@ -38,10 +38,10 @@ const Projects = () => {
   const initialAchievements: ArtifactType[] = useMemo(
     () => [
       {
-        title: "Shipping an android app with [10k+ users]",
+        title: "Shipping an android app with [10k+ installs]",
         links: [
           {
-            text: "10k+ users",
+            text: "10k+ installs",
             link: "https://play.google.com/store/apps/details?id=com.mobisys.android.ibp",
           },
         ],
