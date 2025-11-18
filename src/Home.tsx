@@ -24,7 +24,7 @@ function Home() {
     () => [
       {
         name: "email",
-        url: "reach@khushal.live",
+        url: "sharmakhushal78@gmail.com",
         color: getRandomColor(),
       },
       {
@@ -299,11 +299,11 @@ function Home() {
                     textDecorationLine: "underline",
                   }}
                   onClick={() => {
-                    navigator.clipboard.writeText("reach@khushal.live");
+                    navigator.clipboard.writeText("sharmakhushal78@gmail.com");
                     alert("Copied to clipboard!!");
                   }}
                 >
-                  reach@khushal.live
+                  sharmakhushal78@gmail.com
                 </span>
                 .
               </p>
