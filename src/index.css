@@ -60,3 +60,19 @@ body {
   font-size: 12px;
   line-height: 1.4;
 }
+
+/* Line Animation Styles */
+.line-traveler {
+  offset-path: path("M 0 20 L 2000 20");
+  animation: travel 8s infinite linear;
+}
+
+@keyframes travel {
+  0% {
+    offset-distance: 0%;
+  }
+
+  100% {
+    offset-distance: 100%;
+  }
+}

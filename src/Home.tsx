@@ -11,14 +11,19 @@ type LinkType = {
 import { Link } from "react-router-dom";
 import Cal from "@calcom/embed-react";
 
+const colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
+
+function getRandomColor(excludeColor?: string) {
+  const availableColors = excludeColor
+    ? colors.filter((c) => c !== excludeColor)
+    : colors;
+  return availableColors[Math.floor(Math.random() * availableColors.length)];
+}
+
 function Home() {
   const [activeBio, setActiveBio] = useState<BioType>("short");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
-
-  function getRandomColor() {
-    return colors[Math.floor(Math.random() * colors.length)];
-  }
+  const [circleColor, setCircleColor] = useState(colors[0]);
 
   const initialLinks: LinkType[] = useMemo(
     () => [
@@ -74,9 +79,10 @@ function Home() {
       setLinks((prevLinks) =>
         prevLinks.map((link) => ({
           ...link,
-          color: getRandomColor(),
+          color: getRandomColor(link.color),
         }))
       );
+      setCircleColor((prev) => getRandomColor(prev));
     }, 5000);
 
     return () => clearInterval(intervalId);
@@ -85,14 +91,7 @@ function Home() {
   return (
     <div>
       <div className="flex flex-col items-center md:items-start justify-between w-full gap-4 pt-20">
-        {/* <div className="rounded-full w-24 h-24 overflow-hidden shadow-2xl shadow-pink-400/20 [transform-origin:0%_100%] hover:[transform:translate(4px,4px)_rotate(-12deg)] transition-transform duration-300 ease-in-out bg-gray-500/20 border-2 border-gray-400/10"> */}
-        {/* <img
-            src={heroImage}
-            alt="Profile picture"
-            className="w-full h-full object-cover grayscale"
-          /> */}
         <FaceTracker />
-        {/* </div> */}
         <div className="text-center md:text-left">
           <h1 className="text-3xl">Khushal Sharma</h1>
           <h2 className="text-lg text-gray-400 mb-4">
@@ -310,6 +309,19 @@ function Home() {
             </div>
           )}
         </div>
+      </div>
+
+      <div className="fixed bottom-0 left-0 right-0 flex justify-center overflow-hidden z-40">
+        <svg
+          width="100%"
+          height="40"
+          viewBox="0 0 2000 40"
+          preserveAspectRatio="xMidYMid meet"
+          fill="none"
+        >
+          <path stroke="#3f3f46" strokeWidth="2" d="M 0 20 L 2000 20" />
+          <circle className="line-traveler" r="8" fill={circleColor} />
+        </svg>
       </div>
 
       {isModalOpen && (
