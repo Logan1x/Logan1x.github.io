@@ -214,7 +214,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto mb-4 min-h-screen">
+    <div className="max-w-7xl mx-auto mb-4">
       <Link
         to="/"
         className="text-lg text-gray-400 pt-4 flex items-center gap-2 cursor-pointer"
@@ -246,99 +246,101 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-          <div className="space-y-8">
-            <section className="mb-8">
-              <h2 className="text-2xl mb-4 flex items-center gap-2">
-                Achievements
-              </h2>
-              <ul className="space-y-3">
-                {colorizedLinks.achievements.map((achievement, index) => (
-                  <li key={index} className="flex">
-                    <span className="mr-2 text-gray-500">-</span>
-                    <div className="text-lg">
-                      {renderTitleWithLinks(
-                        achievement.title,
-                        achievement.links
-                      )}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </section>
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+            <div className="space-y-8">
+              <section className="mb-8">
+                <h2 className="text-2xl mb-4 flex items-center gap-2">
+                  Achievements
+                </h2>
+                <ul className="space-y-3">
+                  {colorizedLinks.achievements.map((achievement, index) => (
+                    <li key={index} className="flex">
+                      <span className="mr-2 text-gray-500">-</span>
+                      <div className="text-lg">
+                        {renderTitleWithLinks(
+                          achievement.title,
+                          achievement.links
+                        )}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl mb-4 flex items-center gap-2">Talks</h2>
-              <ul className="space-y-3">
-                {colorizedLinks.talks.map((talk, index) => (
-                  <li key={index} className="flex">
-                    <span className="mr-2 text-gray-500">-</span>
-                    <div className="text-lg">
-                      {renderTitleWithLinks(talk.title, talk.links)}
-                    </div>
-                  </li>
-                ))}
+              <section className="mb-8">
+                <h2 className="text-2xl mb-4 flex items-center gap-2">Talks</h2>
+                <ul className="space-y-3">
+                  {colorizedLinks.talks.map((talk, index) => (
+                    <li key={index} className="flex">
+                      <span className="mr-2 text-gray-500">-</span>
+                      <div className="text-lg">
+                        {renderTitleWithLinks(talk.title, talk.links)}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </div>
+
+            <section className="lg:h-[calc(100vh-420px)] lg:overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent pr-2">
+              <h2 className="text-2xl mb-4">Projects</h2>
+              <ul className="space-y-3 pb-4">
+                {colorizedLinks.projects
+                  .slice(0, visibleProjects)
+                  .map((project, index) => (
+                    <li key={index} className="flex">
+                      <span className="mr-2 text-gray-500">-</span>
+                      <div className="text-lg">
+                        {renderTitleWithLinks(project.title, project.links)}
+                      </div>
+                    </li>
+                  ))}
               </ul>
+              {visibleProjects < colorizedLinks.projects.length && (
+                <button
+                  onClick={loadMoreProjects}
+                  className="text-gray-400 hover:text-gray-500 transition-colors duration-200 cursor-pointer"
+                  style={{
+                    textDecorationColor: getRandomColor(),
+                    textDecorationLine: "underline",
+                    textDecorationThickness: 2,
+                  }}
+                >
+                  Load More
+                </button>
+              )}
             </section>
           </div>
 
-          <section className="lg:h-[calc(100vh-300px)] lg:overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent pr-2">
-            <h2 className="text-2xl mb-4">Projects</h2>
-            <ul className="space-y-3 pb-4">
-              {colorizedLinks.projects
-                .slice(0, visibleProjects)
-                .map((project, index) => (
-                  <li key={index} className="flex">
-                    <span className="mr-2 text-gray-500">-</span>
-                    <div className="text-lg">
-                      {renderTitleWithLinks(project.title, project.links)}
-                    </div>
-                  </li>
-                ))}
-            </ul>
-            {visibleProjects < colorizedLinks.projects.length && (
-              <button
-                onClick={loadMoreProjects}
-                className="text-gray-400 hover:text-gray-500 transition-colors duration-200 cursor-pointer"
-                style={{
-                  textDecorationColor: getRandomColor(),
-                  textDecorationLine: "underline",
-                  textDecorationThickness: 2,
-                }}
-              >
-                Load More
-              </button>
-            )}
-          </section>
+          <p className="text-sm text-center text-gray-400 mt-8">
+            For more projects and talks, head over to my{" "}
+            <a
+              href="https://github.com/logan1x"
+              target="_blank"
+              className="underline hover:text-white transition-colors"
+              style={{
+                textDecorationColor: getRandomColor(),
+                textDecorationLine: "underline",
+              }}
+            >
+              github
+            </a>{" "}
+            or{" "}
+            <a
+              href="https://www.youtube.com/watch?v=Biak99FOcto&list=PLTDKeEQ2HNZQRlDl3JKfc4VD1yykKSXv8"
+              target="_blank"
+              className="underline hover:text-white transition-colors"
+              style={{
+                textDecorationColor: getRandomColor(),
+                textDecorationLine: "underline",
+              }}
+            >
+              youtube
+            </a>
+            .
+          </p>
         </div>
-
-        <p className="text-sm text-center text-gray-400 mt-8">
-          For more projects and talks, head over to my{" "}
-          <a
-            href="https://github.com/logan1x"
-            target="_blank"
-            className="underline hover:text-white transition-colors"
-            style={{
-              textDecorationColor: getRandomColor(),
-              textDecorationLine: "underline",
-            }}
-          >
-            github
-          </a>{" "}
-          or{" "}
-          <a
-            href="https://www.youtube.com/watch?v=Biak99FOcto&list=PLTDKeEQ2HNZQRlDl3JKfc4VD1yykKSXv8"
-            target="_blank"
-            className="underline hover:text-white transition-colors"
-            style={{
-              textDecorationColor: getRandomColor(),
-              textDecorationLine: "underline",
-            }}
-          >
-            youtube
-          </a>
-          .
-        </p>
       </div>
     </div>
   );
