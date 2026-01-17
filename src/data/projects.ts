@@ -1,6 +1,16 @@
 export const projects = [
   {
     title:
+      "[Kreeate]: Writing GitHub issues sucks. We fixed it.",
+    links: [
+      {
+        text: "Kreeate",
+        link: "http://kreeate.khushal.live/",
+      },
+    ],
+  },
+  {
+    title:
       "[Fire in the belly]: Your personalized tracker for exams, hackathons, and beyond.",
     links: [
       {
