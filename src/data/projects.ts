@@ -340,10 +340,6 @@ export const projects = [
     title: "[Nucleotide Sequence Generator]: Generate random DNA sequence and find reverse complement.",
     links: [
       {
-        text: "Nucleotide Generator",
-        link: "https://nucleotide-generator.herokuapp.com/",
-      },
-      {
         text: "Repo",
         link: "https://github.com/Logan1x/Nucleotide-Sequence-generator",
       },
@@ -413,10 +409,6 @@ export const projects = [
   {
     title: "[Year Progress]: Year Progress Bot made with Flask.",
     links: [
-      {
-        text: "Year Progress",
-        link: "https://year-progres.herokuapp.com/",
-      },
       {
         text: "Repo",
         link: "https://github.com/Logan1x/Year-Progress",

@@ -299,7 +299,7 @@ const Projects = () => {
             {visibleProjects < colorizedLinks.projects.length && (
               <button
                 onClick={loadMoreProjects}
-                className="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer"
+                className="text-gray-400 hover:text-gray-500 transition-colors duration-200 cursor-pointer"
                 style={{
                   textDecorationColor: getRandomColor(),
                   textDecorationLine: "underline",
