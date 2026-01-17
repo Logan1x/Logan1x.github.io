@@ -24,7 +24,7 @@ function Home() {
   const [activeBio, setActiveBio] = useState<BioType>("short");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [circleColor, setCircleColor] = useState(colors[0]);
-  const [showAnimation, setShowAnimation] = useState(false);
+  const [showAnimation] = useState(false);
 
   const initialLinks: LinkType[] = useMemo(
     () => [
@@ -113,8 +113,7 @@ function Home() {
             <h2 className="text-lg text-gray-500 tracking-tight leading-snug">
               <span className="block">Turning ideas into websites.</span>
               <span className="block">
-                Ready for{" "}
-                <span className="text-gray-900">yours</span>.
+                Ready for <span className="text-gray-900">yours</span>.
               </span>
             </h2>
           </div>
@@ -167,8 +166,8 @@ function Home() {
                 key={bioType}
                 onClick={() => setActiveBio(bioType)}
                 className={`px-4 py-1 rounded-full border-2 capitalize cursor-pointer ${activeBio === bioType
-                  ? "border-pink-500 text-pink-500"
-                  : "border-gray-400 text-gray-400 hover:border-pink-500 hover:text-pink-500 transition-colors duration-300"
+                    ? "border-pink-500 text-pink-500"
+                    : "border-gray-400 text-gray-400 hover:border-pink-500 hover:text-pink-500 transition-colors duration-300"
                   }`}
               >
                 {bioType}
