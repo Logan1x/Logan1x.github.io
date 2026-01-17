@@ -295,7 +295,7 @@ const Projects = () => {
               </section>
             </div>
 
-            <section className="lg:h-[calc(100vh-420px)] lg:overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent pr-2">
+            <section className="lg:h-full lg:overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent pr-2">
               <h2 className="text-2xl mb-4">Projects</h2>
               <ul className="space-y-3 pb-4">
                 {colorizedLinks.projects
