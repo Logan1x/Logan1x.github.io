@@ -1,7 +1,7 @@
 export const projects = [
   {
     title:
-      "[Kreeate]: Writing GitHub issues sucks. We fixed it.",
+      "[Kreeate]: Writing GitHub issues sucks. I made it easier.",
     links: [
       {
         text: "Kreeate",
@@ -210,7 +210,7 @@ export const projects = [
     title: "[Keep Clone React]: Open-source replica of Google Keep built with ReactJS.",
     links: [
       {
-        text: "Keep Clone",
+        text: "Keep Clone React",
         link: "https://react-keep-clone.netlify.app/",
       },
       {
@@ -275,7 +275,7 @@ export const projects = [
     title: "[Cash Register Manager]: Gives change in minimum number of notes.",
     links: [
       {
-        text: "Cash Register",
+        text: "Cash Register Manager",
         link: "https://cash-register-manager-neog.netlify.app/",
       },
       {
@@ -314,7 +314,7 @@ export const projects = [
     title: "[Random Profile Cards]: Project where data is fetched from an API and rendered.",
     links: [
       {
-        text: "Random Profile",
+        text: "Random Profile Cards",
         link: "https://random-profile.netlify.app/",
       },
       {
@@ -340,7 +340,7 @@ export const projects = [
     title: "[Nucleotide Sequence Generator]: Generate random DNA sequence and find reverse complement.",
     links: [
       {
-        text: "Repo",
+        text: "Nucleotide Sequence Generator",
         link: "https://github.com/Logan1x/Nucleotide-Sequence-generator",
       },
     ],
@@ -410,7 +410,7 @@ export const projects = [
     title: "[Year Progress]: Year Progress Bot made with Flask.",
     links: [
       {
-        text: "Repo",
+        text: "Year Progress",
         link: "https://github.com/Logan1x/Year-Progress",
       },
     ],

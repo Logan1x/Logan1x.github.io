@@ -164,7 +164,7 @@ const Projects = () => {
   }, [initialAchievements, initialTalks, initialProjects]);
 
   const loadMoreProjects = () => {
-    setVisibleProjects((prev) => prev + 6);
+    setVisibleProjects((prev) => prev + 4);
   };
 
   const renderTitleWithLinks = (title: string, links?: LinkItem[]) => {
@@ -214,7 +214,19 @@ const Projects = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto mb-4">
+    <div className="max-w-6xl mx-auto mb-4 relative">
+      <div
+        className="pointer-events-none fixed inset-0 z-0 opacity-50"
+        style={{
+          backgroundImage: `
+            repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(75, 85, 99, 0.08) 79px, rgba(75, 85, 99, 0.08) 80px, transparent 80px, transparent 159px, rgba(75, 85, 99, 0.08) 159px, rgba(75, 85, 99, 0.08) 160px),
+            repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(75, 85, 99, 0.08) 79px, rgba(75, 85, 99, 0.08) 80px, transparent 80px, transparent 159px, rgba(75, 85, 99, 0.08) 159px, rgba(75, 85, 99, 0.08) 160px),
+            radial-gradient(circle at 80px 80px, rgba(55, 65, 81, 0.12) 2px, transparent 2px),
+            radial-gradient(circle at 160px 160px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)
+          `,
+          backgroundSize: "160px 160px, 160px 160px, 160px 160px, 160px 160px",
+        }}
+      />
       <Link
         to="/"
         className="text-lg text-gray-400 pt-4 flex items-center gap-2 cursor-pointer"
@@ -238,7 +250,7 @@ const Projects = () => {
         <span>Go back</span>
       </Link>
 
-      <div className="w-full pt-8">
+      <div className="w-full pt-8 relative z-10">
         <div className="text-center mb-8">
           <h1 className="text-3xl">Artifacts</h1>
           <p className="text-lg text-gray-400 my-2">
