@@ -258,7 +258,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8">
+        <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border-2 border-[#eeeeec]">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8">
             <div className="space-y-8">
               <section className="mb-8">

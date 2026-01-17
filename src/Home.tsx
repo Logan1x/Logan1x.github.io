@@ -90,9 +90,9 @@ function Home() {
   }, []);
 
   return (
-    <div className="max-w-3xl mx-auto min-h-screen flex items-center relative">
+    <div className="max-w-4xl mx-auto min-h-screen flex items-center relative">
       <div
-        className="pointer-events-none fixed inset-0 z-0 opacity-70"
+        className="pointer-events-none fixed inset-0 z-0 opacity-50"
         style={{
           backgroundImage: `
             repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(75, 85, 99, 0.08) 79px, rgba(75, 85, 99, 0.08) 80px, transparent 80px, transparent 159px, rgba(75, 85, 99, 0.08) 159px, rgba(75, 85, 99, 0.08) 160px),
@@ -103,7 +103,7 @@ function Home() {
           backgroundSize: "160px 160px, 160px 160px, 160px 160px, 160px 160px",
         }}
       />
-      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 w-full relative z-10">
+      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 lg:p-8 w-full relative z-10 border-2 border-[#eeeeec]">
         <div className="flex flex-col items-center justify-between w-full gap-4">
           <FaceTracker />
           <div className="text-center">
@@ -166,8 +166,8 @@ function Home() {
                 key={bioType}
                 onClick={() => setActiveBio(bioType)}
                 className={`px-4 py-1 rounded-full border-2 capitalize cursor-pointer ${activeBio === bioType
-                    ? "border-pink-500 text-pink-500"
-                    : "border-gray-400 text-gray-400 hover:border-pink-500 hover:text-pink-500 transition-colors duration-300"
+                  ? "border-pink-500 text-pink-500"
+                  : "border-gray-400 text-gray-400 hover:border-pink-500 hover:text-pink-500 transition-colors duration-300"
                   }`}
               >
                 {bioType}
