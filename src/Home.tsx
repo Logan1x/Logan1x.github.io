@@ -89,7 +89,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="max-w-2xl">
       <div className="flex flex-col items-center md:items-start justify-between w-full gap-4 pt-20">
         <FaceTracker />
         <div className="text-center md:text-left">

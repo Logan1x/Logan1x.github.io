@@ -7,7 +7,7 @@ import NotFound from "./NotFound";
 function App(): JSX.Element {
   return (
     <BrowserRouter>
-      <div className="max-w-2xl mx-auto flex flex-col items-center min-h-screen px-4 sm:px-6">
+      <div className="mx-auto flex flex-col items-center min-h-screen px-4 sm:px-6">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/artifacts" element={<Projects />} />
