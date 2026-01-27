@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-// @ts-ignore
+// @ts-expect-error - CSS import
 import "./index.css";
 import App from "./App.tsx";
 
