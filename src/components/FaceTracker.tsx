@@ -1,24 +1,9 @@
 import { useRef } from "react";
 import useGazeTracking from "../hooks/useGazeTracking";
 
-export default function FaceTracker({
-  className = "",
-  basePath = "/faces/",
-  showDebug = false,
-}) {
+export default function FaceTracker({ className = "" }) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { backgroundPosition, isLoading, error } = useGazeTracking(
-    containerRef,
-    basePath
-  );
-
-  if (error) {
-    return (
-      <div className="face-tracker-error">
-        Error loading face images: {String(error)}
-      </div>
-    );
-  }
+  const { backgroundPosition } = useGazeTracking(containerRef);
 
   return (
     <div
@@ -29,18 +14,10 @@ export default function FaceTracker({
         className="face-image w-full h-full grayscale"
         style={{
           backgroundImage: "url(/faces/sprite.webp)",
-          backgroundPosition: backgroundPosition,
+          backgroundPosition,
           backgroundSize: "672px 672px",
         }}
       />
-
-      {isLoading && <div className="face-loading">Loading face...</div>}
-
-      {showDebug && (
-        <div className="face-debug">
-          <div>Position: {backgroundPosition}</div>
-        </div>
-      )}
     </div>
   );
 }
