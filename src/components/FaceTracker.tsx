@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import useGazeTracking from "../hooks/useGazeTracking";
 
 export default function FaceTracker({
@@ -7,21 +7,10 @@ export default function FaceTracker({
   showDebug = false,
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { currentImage, isLoading, error } = useGazeTracking(
+  const { backgroundPosition, isLoading, error } = useGazeTracking(
     containerRef,
     basePath
   );
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e: { clientX: number; clientY: number }) => {
-    if (!containerRef.current) return;
-
-    const rect = containerRef.current.getBoundingClientRect();
-    setMousePos({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
-  };
 
   if (error) {
     return (
@@ -34,36 +23,22 @@ export default function FaceTracker({
   return (
     <div
       ref={containerRef}
-      className={`face-tracker rounded-full w-24 h-24 overflow-hidden shadow-2xl shadow-pink-400/20 bg-gray-500/20 border-2 border-gray-400/10 ${className}`}
-      onMouseMove={handleMouseMove}
+      className={`face-tracker rounded-full w-22 h-22 overflow-hidden shadow-2xl shadow-pink-400/20 bg-gray-500/20 border-2 border-gray-400/10 ${className}`}
     >
-      {currentImage && (
-        <img
-          src={currentImage}
-          alt="Face following gaze"
-          className="face-image w-full h-full object-contain grayscale"
-          style={{
-            transition: "opacity 0.1s ease-out",
-            display: "block",
-          }}
-          fetchPriority="high"
-          onError={(e) =>
-            console.error("Image failed to load:", currentImage, e)
-          }
-        />
-      )}
+      <div
+        className="face-image w-full h-full grayscale"
+        style={{
+          backgroundImage: "url(/faces/sprite.webp)",
+          backgroundPosition: backgroundPosition,
+          backgroundSize: "672px 672px",
+        }}
+      />
 
       {isLoading && <div className="face-loading">Loading face...</div>}
 
       {showDebug && (
         <div className="face-debug">
-          <div>
-            Mouse: ({Math.round(mousePos.x)}, {Math.round(mousePos.y)})
-          </div>
-          <div>
-            Image: {currentImage ? currentImage.split("/").pop() : "None"}
-          </div>
-          <div>Full Path: {currentImage || "None"}</div>
+          <div>Position: {backgroundPosition}</div>
         </div>
       )}
     </div>
