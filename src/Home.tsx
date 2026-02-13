@@ -1,5 +1,6 @@
 import { useState, useMemo, useLayoutEffect } from "react";
 import FaceTracker from "./components/FaceTracker";
+import FloatingArtifact from "./components/FloatingArtifact";
 
 type BioType = "short" | "long";
 type LinkType = {
@@ -103,6 +104,7 @@ function Home() {
           backgroundSize: "160px 160px, 160px 160px, 160px 160px, 160px 160px",
         }}
       />
+      <FloatingArtifact />
       <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 lg:p-8 w-full relative z-10 border-2 border-[#eeeeec]">
         <div className="flex flex-col items-center justify-between w-full gap-4">
           <FaceTracker />

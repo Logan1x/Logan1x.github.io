@@ -1,5 +1,6 @@
 import { useState, useMemo, useLayoutEffect } from "react";
 import { projects } from "./data/projects";
+import FloatingArtifact from "./components/FloatingArtifact";
 
 const colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
 
@@ -227,6 +228,7 @@ const Projects = () => {
           backgroundSize: "160px 160px, 160px 160px, 160px 160px, 160px 160px",
         }}
       />
+      <FloatingArtifact />
       <Link
         to="/"
         className="text-lg text-gray-400 pt-4 flex items-center gap-2 cursor-pointer"

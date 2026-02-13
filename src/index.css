@@ -76,3 +76,42 @@ body {
     offset-distance: 100%;
   }
 }
+
+.artifact-floater {
+  --evade-x: 0px;
+  --evade-y: 0px;
+  --evade-rotate: 0deg;
+  position: fixed;
+  right: 0.5rem;
+  bottom: -1.25rem;
+  width: clamp(5rem, 9vw, 6.25rem);
+  z-index: 30;
+  pointer-events: none;
+  animation: artifact-sway 3.6s ease-in-out infinite;
+}
+
+.artifact-floater__inner {
+  transform: translate3d(var(--evade-x), var(--evade-y), 0)
+    rotate(var(--evade-rotate));
+  transform-origin: 50% 100%;
+  transition: transform 180ms ease-out;
+  will-change: transform;
+}
+
+.artifact-floater__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+@keyframes artifact-sway {
+  0%,
+  100% {
+    transform: translateX(-4px) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateX(9px) rotate(2deg);
+  }
+}
