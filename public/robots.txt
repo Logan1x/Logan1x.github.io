@@ -22,4 +22,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://khushal.live/sitemap.xml
+Sitemap: https://khushal.work/sitemap.xml

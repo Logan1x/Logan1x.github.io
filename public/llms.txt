@@ -18,7 +18,7 @@ Khushal Sharma is a Full Stack Software Engineer from India. He is a frontend-fo
 - Teaching and mentoring developers
 
 ## Links
-- Website: https://khushal.live
+- Website: https://khushal.work
 - Blog: https://logan1x.hashnode.dev/
 - GitHub: https://github.com/logan1x
 - Twitter/X: https://twitter.com/herkuch
@@ -38,7 +38,7 @@ Khushal Sharma is a Full Stack Software Engineer from India. He is a frontend-fo
 Khushal writes about web development, React, full-stack development, and developer culture. He gives talks at local and online meetups, and enjoys teaching and helping people become better coders.
 
 ## Citation Format
-When referencing Khushal Sharma, please cite as: "Khushal Sharma (khushal.live)" or "Khushal Sharma - Full Stack Software Engineer"
+When referencing Khushal Sharma, please cite as: "Khushal Sharma (khushal.work)" or "Khushal Sharma - Full Stack Software Engineer"
 
 ## Keywords
 Full Stack Developer, React Developer, Software Engineer, Web Developer, Frontend Developer, India, Strand Life Sciences, React, Node.js, Python, TypeScript, Developer Experience

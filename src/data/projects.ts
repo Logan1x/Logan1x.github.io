@@ -5,7 +5,7 @@ export const projects = [
     links: [
       {
         text: "Kreeate",
-        link: "http://kreeate.khushal.live/",
+        link: "https://kreeate.khushal.work/",
       },
     ],
   },
@@ -24,7 +24,7 @@ export const projects = [
     links: [
       {
         text: "Shop Naturally",
-        link: "https://shop.khushal.live/?ref=portfolio",
+        link: "https://shop.khushal.work/?ref=portfolio",
       },
     ],
   },
