@@ -332,7 +332,7 @@ const Projects = () => {
             <a
               href="https://github.com/logan1x"
               target="_blank"
-              className="underline hover:text-white transition-colors"
+              className="underline hover:text-gray-600 transition-colors"
               style={{
                 textDecorationColor: getRandomColor(),
                 textDecorationLine: "underline",
@@ -344,7 +344,7 @@ const Projects = () => {
             <a
               href="https://www.youtube.com/watch?v=Biak99FOcto&list=PLTDKeEQ2HNZQRlDl3JKfc4VD1yykKSXv8"
               target="_blank"
-              className="underline hover:text-white transition-colors"
+              className="underline hover:text-gray-600 transition-colors"
               style={{
                 textDecorationColor: getRandomColor(),
                 textDecorationLine: "underline",
