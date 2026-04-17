@@ -61,7 +61,7 @@ function Home() {
       },
       {
         name: "resume",
-        url: "https://fra.cloud.appwrite.io/v1/storage/buckets/resume/files/resume/view?project=68fcdfca000d9b10c995",
+        url: "https://pub-40cc422904f1445784b2e67bb8a2cb64.r2.dev/Resume_Khushal_5YOE.pdf",
         color: getRandomColor(),
       },
     ],

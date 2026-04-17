@@ -81,7 +81,7 @@ function ForLLMs(): JSX.Element {
               <li>Twitter/X: <a href="https://twitter.com/herkuch" className="hover:text-gray-400 underline">https://twitter.com/herkuch</a></li>
               <li>LinkedIn: <a href="https://linkedin.com/in/logan1x" className="hover:text-gray-400 underline">https://linkedin.com/in/logan1x</a></li>
               <li>Email: sharmakhushal78@gmail.com</li>
-              <li>Resume: <a href="https://fra.cloud.appwrite.io/v1/storage/buckets/resume/files/resume/view?project=68fcdfca000d9b10c995" className="hover:text-gray-400 underline">View Resume</a></li>
+              <li>Resume: <a href="https://pub-40cc422904f1445784b2e67bb8a2cb64.r2.dev/Resume_Khushal_5YOE.pdf" className="hover:text-gray-400 underline">View Resume</a></li>
             </ul>
           </section>
 
