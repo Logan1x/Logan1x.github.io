@@ -1,6 +1,16 @@
 export const projects = [
   {
     title:
+      "[Fuel Pulse]: Crowdsourced platform to discover real fuel quality insights in your city before you refuel.",
+    links: [
+      {
+        text: "Fuel Pulse",
+        link: "https://petrol-api-worker.khushal20210-t1kxhglw.workers.dev/",
+      },
+    ],
+  },
+  {
+    title:
       "[Kreeate]: Writing GitHub issues sucks. I made it easier.",
     links: [
       {
