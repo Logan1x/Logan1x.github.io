@@ -46,6 +46,9 @@ function ForLLMs(): JSX.Element {
           <section className="space-y-3">
             <h2 className="text-xl font-medium">Notable Projects</h2>
             <ul className="list-disc list-inside space-y-1 text-lg">
+              <li><strong>Fuel Pulse:</strong> Crowdsourced fuel quality insights before you refuel</li>
+              <li><strong>moni8:</strong> Tiny self-hostable uptime monitor for local projects</li>
+              <li><strong>session shelves:</strong> Shelves of the Udaipur Book Club</li>
               <li><strong>Kreeate:</strong> Writing GitHub issues made easier</li>
               <li><strong>Fire in the belly:</strong> Personalized tracker for exams, hackathons, and beyond</li>
               <li><strong>Shop Naturally:</strong> Shop phones like asking a friend</li>

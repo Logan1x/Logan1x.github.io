@@ -11,7 +11,27 @@ export const projects = [
   },
   {
     title:
-      "[Kreeate]: Writing GitHub issues sucks. I made it easier.",
+      "[moni8]: Tiny self-hostable uptime monitor for your local projects.",
+    links: [
+      {
+        text: "moni8",
+        link: "https://github.com/Logan1x/moni8",
+      },
+    ],
+  },
+  {
+    title:
+      "[session shelves]: Shelves of the Udaipur Book Club.",
+    links: [
+      {
+        text: "session shelves",
+        link: "https://github.com/Logan1x/session_shelves",
+      },
+    ],
+  },
+  {
+    title:
+      "[Kreeate]: A cleaner way to write GitHub issues.",
     links: [
       {
         text: "Kreeate",
