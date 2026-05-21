@@ -25,7 +25,7 @@ export const projects = [
     links: [
       {
         text: "session shelves",
-        link: "https://github.com/Logan1x/session_shelves",
+        link: "https://session-shelves.vercel.app/",
       },
     ],
   },
