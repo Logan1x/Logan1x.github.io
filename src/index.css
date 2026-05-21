@@ -4,6 +4,7 @@
 @layer base {
   html {
     font-size: 110%;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
@@ -17,6 +18,15 @@ body {
   font-family: "DM Mono", monospace;
   font-weight: 400;
   font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.projects-balance {
+  text-wrap: balance;
+}
+
+.projects-pretty {
+  text-wrap: pretty;
 }
 
 .face-tracker {

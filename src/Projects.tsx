@@ -249,13 +249,13 @@ const Projects = () => {
             />
           </svg>
         </span>
-        <span>Go back</span>
+        <span className="projects-balance">Go back</span>
       </Link>
 
       <div className="w-full pt-8 relative z-10">
         <div className="text-center mb-8">
-          <h1 className="text-3xl">Artifacts</h1>
-          <p className="text-lg text-gray-400 my-2">
+          <h1 className="projects-balance text-3xl sm:text-4xl">Artifacts</h1>
+          <p className="projects-pretty mx-auto my-3 max-w-2xl text-lg text-gray-500">
             Here are things I am proud of.
           </p>
         </div>
