@@ -5,7 +5,7 @@ export const projects = [
     links: [
       {
         text: "Fuel Pulse",
-        link: "https://petrol-api-worker.khushal20210-t1kxhglw.workers.dev/",
+        link: "https://fuel.khushal.work/",
       },
     ],
   },
@@ -16,16 +16,6 @@ export const projects = [
       {
         text: "moni8",
         link: "https://moni8.khushal.work/",
-      },
-    ],
-  },
-  {
-    title:
-      "[session shelves]: Shelves of the Udaipur Book Club.",
-    links: [
-      {
-        text: "session shelves",
-        link: "https://session-shelves.vercel.app/",
       },
     ],
   },
@@ -46,6 +36,16 @@ export const projects = [
       {
         text: "Fire in the belly",
         link: "https://www.ftbhustle.com/?ref=khushal",
+      },
+    ],
+  },
+  {
+    title:
+      "[session shelves]: Shelves of the Udaipur Book Club.",
+    links: [
+      {
+        text: "session shelves",
+        link: "https://session-shelves.vercel.app/",
       },
     ],
   },

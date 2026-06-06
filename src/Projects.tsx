@@ -215,7 +215,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto mb-4 relative">
+    <div className="projects-page max-w-6xl mx-auto relative">
       <div
         className="pointer-events-none fixed inset-0 z-0 opacity-50"
         style={{
@@ -231,7 +231,7 @@ const Projects = () => {
       <FloatingArtifact />
       <Link
         to="/"
-        className="text-lg text-gray-400 pt-4 flex items-center gap-2 cursor-pointer"
+        className="inline-flex min-h-10 items-center gap-2 rounded-full px-3 py-2 text-base text-gray-500 transition-transform transition-colors duration-200 hover:-translate-x-0.5 hover:text-gray-700 active:scale-[0.96] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
       >
         <span>
           <svg
@@ -253,7 +253,7 @@ const Projects = () => {
       </Link>
 
       <div className="w-full pt-8 relative z-10">
-        <div className="text-center mb-8">
+        <div className="text-center">
           <h1 className="projects-balance text-3xl sm:text-4xl">Artifacts</h1>
           <p className="projects-pretty mx-auto my-3 max-w-2xl text-lg text-gray-500">
             Here are things I am proud of.
@@ -262,14 +262,17 @@ const Projects = () => {
 
         <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border-2 border-[#eeeeec]">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-            <div className="space-y-8">
-              <section className="mb-8">
-                <h2 className="text-2xl mb-4 flex items-center gap-2">
+            <div className="space-y-4">
+              <section>
+                <h2 className="text-2xl flex items-center gap-2">
                   Achievements
                 </h2>
-                <ul className="space-y-3">
+                <ul>
                   {colorizedLinks.achievements.map((achievement, index) => (
-                    <li key={index} className="flex">
+                    <li
+                      key={index}
+                      className="flex rounded-2xl px-3 py-3 transition-colors duration-200 hover:bg-black/[0.035]"
+                    >
                       <span className="mr-2 text-gray-500">-</span>
                       <div className="text-lg">
                         {renderTitleWithLinks(
@@ -282,11 +285,14 @@ const Projects = () => {
                 </ul>
               </section>
 
-              <section className="mb-8">
-                <h2 className="text-2xl mb-4 flex items-center gap-2">Talks</h2>
-                <ul className="space-y-3">
+              <section>
+                <h2 className="text-2xl flex items-center gap-2">Talks</h2>
+                <ul>
                   {colorizedLinks.talks.map((talk, index) => (
-                    <li key={index} className="flex">
+                    <li
+                      key={index}
+                      className="flex rounded-2xl px-3 py-3 transition-colors duration-200 hover:bg-black/[0.035]"
+                    >
                       <span className="mr-2 text-gray-500">-</span>
                       <div className="text-lg">
                         {renderTitleWithLinks(talk.title, talk.links)}
@@ -298,12 +304,20 @@ const Projects = () => {
             </div>
 
             <section className="lg:h-full lg:overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent pr-2">
-              <h2 className="text-2xl mb-4">Projects</h2>
-              <ul className="space-y-3 pb-4">
+              <h2 className="projects-balance flex w-full items-center justify-between gap-3 text-2xl">
+                <span>Projects</span>
+                <span className="shrink-0 rounded-full bg-black/[0.06] px-2.5 py-0.5 text-center text-sm tabular-nums text-gray-600">
+                  {colorizedLinks.projects.length}
+                </span>
+              </h2>
+              <ul>
                 {colorizedLinks.projects
                   .slice(0, visibleProjects)
                   .map((project, index) => (
-                    <li key={index} className="flex">
+                    <li
+                      key={index}
+                      className="flex rounded-2xl px-3 py-3 transition-colors duration-200 hover:bg-black/[0.035]"
+                    >
                       <span className="mr-2 text-gray-500">-</span>
                       <div className="text-lg">
                         {renderTitleWithLinks(project.title, project.links)}
@@ -314,7 +328,7 @@ const Projects = () => {
               {visibleProjects < colorizedLinks.projects.length && (
                 <button
                   onClick={loadMoreProjects}
-                  className="text-gray-400 hover:text-gray-500 transition-colors duration-200 cursor-pointer"
+                  className="inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-gray-500 transition-transform transition-colors duration-200 hover:text-gray-700 active:scale-[0.96] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400 cursor-pointer"
                   style={{
                     textDecorationColor: getRandomColor(),
                     textDecorationLine: "underline",
