@@ -15,7 +15,7 @@ export const projects = [
     links: [
       {
         text: "moni8",
-        link: "https://github.com/Logan1x/moni8",
+        link: "https://moni8.khushal.work/",
       },
     ],
   },
