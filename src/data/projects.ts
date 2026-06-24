@@ -1,6 +1,20 @@
 export const projects = [
   {
     title:
+      "[LockCard]: Turn any wallpaper into a lockscreen contact card. Privacy-first, zero data leaves your browser.",
+    links: [
+      {
+        text: "LockCard",
+        link: "https://lockcard.khushal.work",
+      },
+      {
+        text: "Repo",
+        link: "https://github.com/Logan1x/lockcard",
+      },
+    ],
+  },
+  {
+    title:
       "[Fuel Pulse]: Crowdsourced platform to discover real fuel quality insights in your city before you refuel.",
     links: [
       {
