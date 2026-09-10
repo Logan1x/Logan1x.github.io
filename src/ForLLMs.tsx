@@ -44,6 +44,17 @@ function ForLLMs(): JSX.Element {
           </section>
 
           <section className="space-y-3">
+            <h2 className="text-xl font-medium">Tools</h2>
+            <p className="text-lg">
+              <strong>DeepSeek price clock:</strong> live peak and off-peak
+              DeepSeek API rates for V4.1 Flash and V4 Pro at{" "}
+              <a href="https://khushal.work/deepseek" className="hover:text-gray-400 underline">
+                https://khushal.work/deepseek
+              </a>
+            </p>
+          </section>
+
+          <section className="space-y-3">
             <h2 className="text-xl font-medium">Notable Projects</h2>
             <ul className="list-disc list-inside space-y-1 text-lg">
               <li><strong>Fuel Pulse:</strong> Crowdsourced fuel quality insights before you refuel</li>

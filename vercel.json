@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/deepseek",
+      "destination": "/deepseek.html"
+    },
+    {
+      "source": "/deepseek/",
+      "destination": "/deepseek.html"
+    },
+    {
       "source": "/((?!.*\\.).*)",
       "destination": "/index.html"
     }

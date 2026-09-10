@@ -7,14 +7,17 @@ import {
   type DeepSeekModel,
   type TokenRates,
 } from "./data/deepseekPricing";
+import {
+  DEEPSEEK_FAQS,
+  DEEPSEEK_PAGE_DESCRIPTION,
+  DEEPSEEK_PAGE_KEYWORDS,
+  DEEPSEEK_PAGE_TITLE,
+  DEEPSEEK_PAGE_URL,
+  getDeepSeekJsonLd,
+} from "./data/deepseekSeo";
 import { useDeepSeekClock } from "./hooks/useDeepSeekClock";
 import { usePageMeta } from "./hooks/usePageMeta";
 import { useEffect } from "react";
-
-const PAGE_URL = "https://khushal.work/deepseek";
-const PAGE_TITLE = "DeepSeek V4.1 Flash Pricing | Peak & Off-Peak Clock";
-const PAGE_DESCRIPTION =
-  "Live DeepSeek API price clock. See if you are in peak or off-peak hours and compare DeepSeek V4.1 Flash and V4 Pro rates per 1M tokens.";
 
 const NAV_LINKS = [
   { label: "home", to: "/" },
@@ -35,39 +38,33 @@ function DeepSeek() {
   const flashBilled = proUsesFlashRates(clock.now);
 
   usePageMeta({
-    title: PAGE_TITLE,
-    description: PAGE_DESCRIPTION,
-    url: PAGE_URL,
-    keywords:
-      "DeepSeek pricing, DeepSeek V4.1 Flash price, DeepSeek off-peak, DeepSeek API cost, DeepSeek peak hours, deepseek-flash",
+    title: DEEPSEEK_PAGE_TITLE,
+    description: DEEPSEEK_PAGE_DESCRIPTION,
+    url: DEEPSEEK_PAGE_URL,
+    keywords: DEEPSEEK_PAGE_KEYWORDS,
+    robots:
+      "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   });
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.id = "deepseek-jsonld";
-    script.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      name: PAGE_TITLE,
-      description: PAGE_DESCRIPTION,
-      url: PAGE_URL,
-      author: {
-        "@type": "Person",
-        name: "Khushal Sharma",
-        url: "https://khushal.work",
-      },
-      mainEntity: {
-        "@type": "Table",
-        about: "DeepSeek API peak and off-peak prices per 1M tokens",
-      },
-    });
-    document.head.appendChild(script);
-    return () => script.remove();
+    let script = document.getElementById(
+      "deepseek-jsonld"
+    ) as HTMLScriptElement | null;
+    const created = !script;
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = "deepseek-jsonld";
+      document.head.appendChild(script);
+    }
+    script.text = getDeepSeekJsonLd();
+    return () => {
+      if (created) script.remove();
+    };
   }, []);
 
   return (
-    <div className="w-full max-w-2xl mx-auto min-h-screen py-6 relative">
+    <div className="w-full max-w-4xl mx-auto min-h-screen py-6 relative">
       <div
         className="pointer-events-none fixed inset-0 z-0 opacity-50"
         style={{
@@ -107,11 +104,12 @@ function DeepSeek() {
       <article className="relative z-10 mt-6 bg-white/90 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border-2 border-[#eeeeec]">
         <header className="mb-6">
           <h1 className="text-3xl tracking-tight leading-tight font-medium text-balance">
-            DeepSeek price clock
+            DeepSeek V4.1 Flash price clock
           </h1>
           <p className="mt-3 text-pretty text-gray-600">
-            Off-peak is half price. This page shows whether DeepSeek is cheap
-            right now in your timezone, plus V4.1 Flash and V4 Pro rates.
+            DeepSeek V4.1 Flash is $0.15 input and $0.60 output per 1M tokens
+            off-peak, double at peak. This clock converts the UTC windows to
+            your timezone and lists V4 Pro next to Flash.
           </p>
         </header>
 
@@ -177,7 +175,7 @@ function DeepSeek() {
 
         <section className="mt-8 space-y-6">
           <h2 className="text-sm uppercase tracking-wide text-gray-500">
-            All rates · per 1M tokens
+            DeepSeek V4.1 Flash and V4 Pro API prices
           </h2>
           {DEEPSEEK_MODELS.map((model) => {
             const rows = [
@@ -254,6 +252,24 @@ function DeepSeek() {
               </table>
             );
           })}
+        </section>
+
+        <section className="mt-8">
+          <h2 className="text-sm uppercase tracking-wide text-gray-500">
+            DeepSeek pricing FAQ
+          </h2>
+          <dl className="mt-3 space-y-4">
+            {DEEPSEEK_FAQS.map((faq) => (
+              <div key={faq.question}>
+                <dt className="font-medium text-gray-800 text-pretty">
+                  {faq.question}
+                </dt>
+                <dd className="mt-1 text-pretty text-sm text-gray-500">
+                  {faq.answer}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </section>
 
         <footer className="mt-8 space-y-3 text-pretty text-sm text-gray-500">

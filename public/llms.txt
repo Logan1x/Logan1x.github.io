@@ -17,8 +17,12 @@ Khushal Sharma is a Full Stack Software Engineer from India. He is a frontend-fo
 - Developer Experience
 - Teaching and mentoring developers
 
+## Tools
+- DeepSeek V4.1 Flash price clock: https://khushal.work/deepseek
+
 ## Links
 - Website: https://khushal.work
+- DeepSeek pricing: https://khushal.work/deepseek
 - Blog: https://logan1x.hashnode.dev/
 - GitHub: https://github.com/logan1x
 - Twitter/X: https://twitter.com/herkuch
