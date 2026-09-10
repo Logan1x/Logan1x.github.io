@@ -19,6 +19,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://khushal.work/deepseek</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://khushal.work/llms.txt</loc>
     <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>

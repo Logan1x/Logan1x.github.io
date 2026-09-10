@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Home from "./Home";
 import NotFound from "./NotFound";
 import ForLLMs from "./ForLLMs";
+import DeepSeek from "./DeepSeek";
 
 function App(): JSX.Element {
   return (
@@ -14,6 +15,7 @@ function App(): JSX.Element {
           <Route path="/" element={<Home />} />
           <Route path="/artifacts" element={<Projects />} />
           <Route path="/for-llms" element={<ForLLMs />} />
+          <Route path="/deepseek" element={<DeepSeek />} />
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
