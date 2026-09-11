@@ -25,6 +25,16 @@ export const projects = [
   },
   {
     title:
+      "[Audora]: Performance audits founders can read.",
+    links: [
+      {
+        text: "Audora",
+        link: "https://github.com/Logan1x/reach-founders",
+      },
+    ],
+  },
+  {
+    title:
       "[moni8]: Tiny self-hostable uptime monitor for your local projects.",
     links: [
       {
