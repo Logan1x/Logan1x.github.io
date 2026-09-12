@@ -29,6 +29,10 @@ export const projects = [
     links: [
       {
         text: "Audora",
+        link: "https://audora.khushal.work/",
+      },
+      {
+        text: "Repo",
         link: "https://github.com/Logan1x/reach-founders",
       },
     ],
