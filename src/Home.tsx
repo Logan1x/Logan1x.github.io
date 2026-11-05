@@ -282,9 +282,9 @@ function Home() {
                   >
                     strava
                   </a>
-                  , clicking{" "}
+                  , and documenting plants and animals I come across on{" "}
                   <a
-                    href="https://unsplash.com/@logan1x"
+                    href="https://www.inaturalist.org/people/khushal_sharma"
                     target="_blank"
                     className="hover:text-gray-400"
                     style={{
@@ -292,7 +292,7 @@ function Home() {
                       textDecorationLine: "underline",
                     }}
                   >
-                    pictures
+                    inaturalist
                   </a>{" "}
                   or traveling to remote towns of India.
                 </p>

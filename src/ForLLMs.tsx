@@ -103,8 +103,8 @@ function ForLLMs(): JSX.Element {
           <section className="space-y-3">
             <h2 className="text-xl font-medium">Interests and Activities</h2>
             <p className="text-lg">
-              In his spare time, Khushal enjoys running (posts runs on Strava), photography (Unsplash), 
-              and traveling to remote towns of India.
+              In his spare time, Khushal enjoys running (posts runs on Strava), naturalizing
+              (documents flora and fauna on iNaturalist), and traveling to remote towns of India.
             </p>
           </section>
 
