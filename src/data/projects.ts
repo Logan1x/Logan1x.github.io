@@ -1,6 +1,20 @@
 export const projects = [
   {
     title:
+      "[Understory]: A quiet, read-only feed of the finds from the people you follow on iNaturalist. No algorithm, no posting.",
+    links: [
+      {
+        text: "Understory",
+        link: "https://understory.khushal.work/",
+      },
+      {
+        text: "Play Store",
+        link: "https://play.google.com/store/apps/details?id=com.logan1x.understory",
+      },
+    ],
+  },
+  {
+    title:
       "[LockCard]: Turn any wallpaper into a lockscreen contact card. Privacy-first, zero data leaves your browser.",
     links: [
       {
