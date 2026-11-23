@@ -1,6 +1,16 @@
 export const projects = [
   {
     title:
+      "[Date the Globe]: A mobile-first browser game about dating historical maps from their borders and labels. Guess the era, not the date the map was made.",
+    links: [
+      {
+        text: "Date the Globe",
+        link: "https://globe.khushal.work/",
+      },
+    ],
+  },
+  {
+    title:
       "[Understory]: A quiet, read-only feed of the finds from the people you follow on iNaturalist. No algorithm, no posting.",
     links: [
       {

@@ -57,6 +57,7 @@ function ForLLMs(): JSX.Element {
           <section className="space-y-3">
             <h2 className="text-xl font-medium">Notable Projects</h2>
             <ul className="list-disc list-inside space-y-1 text-lg">
+              <li><strong>Date the Globe:</strong> Mobile-first browser game about dating historical maps from their borders and labels</li>
               <li><strong>Understory:</strong> Quiet, read-only Android feed of the finds from the people you follow on iNaturalist</li>
               <li><strong>Audora:</strong> Performance audits founders can read</li>
               <li><strong>Fuel Pulse:</strong> Crowdsourced fuel quality insights before you refuel</li>
